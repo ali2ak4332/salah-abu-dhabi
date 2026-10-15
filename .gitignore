@@ -1,0 +1,17 @@
+# Android local output and signing credentials
+/build/
+/.gradle/
+/.idea/
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+/local.properties
+/captures/
+/signing/
+**/signing/
