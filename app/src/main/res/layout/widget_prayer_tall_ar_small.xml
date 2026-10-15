@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/widget_background" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:src="@drawable/widget_background" android:scaleType="fitXY" android:importantForAccessibility="no" />
+<LinearLayout
+    android:id="@+id/widget_content" android:layoutDirection="rtl" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="6dp" android:paddingBottom="6dp">
+    <TextView android:id="@+id/widget_label"
+        android:layout_width="match_parent" android:layout_height="16dp" android:layout_weight="0"
+        android:text="NEXT · ABU DHABI" android:textColor="#E6D39E" android:fontFamily="sans-serif-medium"
+        android:gravity="start|center_vertical" android:maxLines="1" android:includeFontPadding="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8dp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1dp" />
+    <TextView android:id="@+id/widget_next_name"
+        android:layout_width="match_parent" android:layout_height="28dp" android:layout_weight="0"
+        android:text="Maghrib · 18:03" android:textColor="#FFFFFF" android:fontFamily="sans-serif-medium" android:fontFeatureSettings="tnum"
+        android:gravity="start|center_vertical" android:maxLines="2" android:includeFontPadding="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10dp" android:autoSizeMaxTextSize="20sp" android:autoSizeStepGranularity="1dp" />
+    <Chronometer android:id="@+id/widget_iqamah_countdown"
+        android:layout_width="match_parent" android:layout_height="24dp" android:layout_weight="0"
+        android:visibility="gone" android:countDown="true" android:textColor="#E6D39E"
+        android:fontFamily="sans-serif-medium" android:fontFeatureSettings="tnum" android:layoutDirection="ltr"
+        android:gravity="start|center_vertical" android:maxLines="1" android:includeFontPadding="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="12dp" android:autoSizeMaxTextSize="20sp" android:autoSizeStepGranularity="1dp" />
+    <TextView android:id="@+id/widget_meta"
+        android:layout_width="match_parent" android:layout_height="14dp" android:layout_weight="0"
+        android:text="TODAY · 11 Oct" android:textColor="#AFC2B7"
+        android:gravity="start|center_vertical" android:maxLines="1" android:includeFontPadding="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8dp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1dp" />
+    <LinearLayout android:id="@+id/widget_prayer_rows" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/widget_fajr_name" style="@style/WidgetPrayerNameArabicSmall" android:text="Fajr" />
+            <TextView android:id="@+id/widget_fajr_time" style="@style/WidgetPrayerTimeArabicSmall" android:text="05:02" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/widget_dhuhr_name" style="@style/WidgetPrayerNameArabicSmall" android:text="Dhuhr" />
+            <TextView android:id="@+id/widget_dhuhr_time" style="@style/WidgetPrayerTimeArabicSmall" android:text="12:12" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/widget_asr_name" style="@style/WidgetPrayerNameArabicSmall" android:text="Asr" />
+            <TextView android:id="@+id/widget_asr_time" style="@style/WidgetPrayerTimeArabicSmall" android:text="15:30" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/widget_maghrib_name" style="@style/WidgetPrayerNameArabicSmall" android:text="Maghrib" />
+            <TextView android:id="@+id/widget_maghrib_time" style="@style/WidgetPrayerTimeArabicSmall" android:text="18:03" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/widget_isha_name" style="@style/WidgetPrayerNameArabicSmall" android:text="Isha" />
+            <TextView android:id="@+id/widget_isha_time" style="@style/WidgetPrayerTimeArabicSmall" android:text="19:16" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/widget_source"
+        android:layout_width="match_parent" android:layout_height="14dp" android:layout_weight="0"
+        android:text="AWQAF · ABU DHABI" android:textColor="#AFC2B7"
+        android:gravity="start|center_vertical" android:maxLines="1" android:includeFontPadding="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8dp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1dp" />
+</LinearLayout>
+
+</FrameLayout>

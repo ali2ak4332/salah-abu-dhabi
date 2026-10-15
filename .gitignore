@@ -1,4 +1,4 @@
-# Android local output and signing credentials
+# Local Android builds and IDE settings
 /build/
 /.gradle/
 /.idea/
@@ -8,10 +8,10 @@
 *.jks
 *.keystore
 *.p12
-*.pfx
 *.pem
 *.key
 /local.properties
 /captures/
+# Never commit signing material, including the test signing identity.
 /signing/
 **/signing/
