@@ -1,0 +1,43 @@
+name: Android build and logic checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Install Android 35 SDK
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Compile debug APK
+        run: gradle --no-daemon :app:assembleDebug
+      - name: Run offline logic regression tests
+        run: |
+          mkdir -p build/tests
+          javac -encoding UTF-8 -source 8 -target 8 -d build/tests \
+            app/src/main/java/ae/prayertimes/abudhabi/Schedule.java \
+            app/src/main/java/ae/prayertimes/abudhabi/AlertPolicy.java \
+            app/src/main/java/ae/prayertimes/abudhabi/DisplayFormat.java \
+            app/src/main/java/ae/prayertimes/abudhabi/PrayerPhase.java \
+            tests/*.java
+          java -cp build/tests ScheduleTest app/src/main/assets/times.csv
+          java -cp build/tests AlertPolicyTest app/src/main/assets/times.csv
+          java -cp build/tests DisplayFormatTest
+          java -cp build/tests PrayerPhaseTest app/src/main/assets/times.csv
+      - name: Upload debug APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: salah-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
