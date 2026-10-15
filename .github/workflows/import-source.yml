@@ -1,0 +1,47 @@
+name: Import Salah source ZIP
+on:
+  push:
+    paths:
+      - 'Salah-Abu-Dhabi-GitHub-Ready.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack source archive safely
+        run: |
+          python3 - &lt;'PY'
+          import pathlib, zipfile
+          archive = pathlib.Path('Salah-Abu-Dhabi-GitHub-Ready.zip')
+          if not archive.is_file():
+              raise SystemExit('Source archive not uploaded')
+          root = pathlib.Path.cwd().resolve()
+          with zipfile.ZipFile(archive) as z:
+              for item in z.infolist():
+                  path = pathlib.PurePosixPath(item.filename)
+                  if path.is_absolute() or '..' in path.parts:
+                      raise SystemExit('Unsafe archive path: ' + item.filename)
+                  parts = path.parts
+                  if parts and parts[0] == 'salah-public-ready':
+                      parts = parts[1:]
+                  if not parts or item.is_dir():
+                      continue
+                  target = root.joinpath(*parts)
+                  if not target.resolve().is_relative_to(root):
+                      raise SystemExit('Unsafe extracted path')
+                  if target.suffix.lower() in {'.jks','.keystore','.p12','.pem','.key'} or 'signing' in (x.lower() for x in target.parts):
+                      raise SystemExit('Signing files found in source archive')
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(item))
+          PY
+      - name: Commit imported source files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f Salah-Abu-Dhabi-GitHub-Ready.zip
+          git add -A
+          git diff --cached --quiet || git commit -m 'Import complete Salah Android source v1.6'
+          git push
