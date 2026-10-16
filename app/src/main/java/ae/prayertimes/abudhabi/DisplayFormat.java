@@ -23,6 +23,14 @@ public final class DisplayFormat {
             :String.format(Locale.US,"%02d:%02d",hour,time.getMinute());
         return digits(value,eastern);
     }
+    /** Localized weekday and complete date, kept short for two-column widgets. */
+    public static String widgetDate(java.time.LocalDate day, boolean arabic, boolean eastern) {
+        Locale language = arabic ? new Locale("ar") : Locale.ENGLISH;
+        String weekday = day.getDayOfWeek().getDisplayName(java.time.format.TextStyle.SHORT, language);
+        String date = String.format(Locale.US, "%02d/%02d/%04d",
+            day.getDayOfMonth(), day.getMonthValue(), day.getYear());
+        return digits(weekday + " " + date, eastern);
+    }
     public static String countdown(long seconds,boolean showSeconds,boolean eastern) {
         seconds=Math.max(0,seconds);
         long minutes=(seconds+59)/60;
