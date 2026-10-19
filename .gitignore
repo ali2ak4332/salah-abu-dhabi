@@ -1,17 +1,9 @@
-# Local Android builds and IDE settings
-/build/
-/.gradle/
-/.idea/
-*.iml
-*.apk
-*.aab
-*.jks
+build/
+.gradle/
+local.properties
 *.keystore
+*.jks
 *.p12
-*.pem
-*.key
-/local.properties
-/captures/
-# Never commit signing material, including the test signing identity.
-/signing/
-**/signing/
+*.pfx
+.env
+signing/

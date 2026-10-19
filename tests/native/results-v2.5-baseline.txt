@@ -1,0 +1,251 @@
+warning: [options] bootstrap class path not set in conjunction with -source 8
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+4 warnings
+JUnit version 4.13.2
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS native switch geometry/accessibility en-figma-412x892 checked=false
+PASS native switch geometry/accessibility en-figma-alert-on-412x892 checked=true
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS native switch geometry/accessibility ar-figma-412x892 checked=false
+PASS native switch geometry/accessibility ar-figma-alert-on-412x892 checked=true
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS phase transitions and date controls English
+Invalid ID 0x00000000.
+PASS phase transitions and date controls Arabic
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS actual calendar and appearance choices English
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS actual calendar and appearance choices Arabic
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS settings and recreation English
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS settings and recreation Arabic
+.Invalid ID 0x00000000.
+PASS expiry and numeral/unit preferences English
+Invalid ID 0x00000000.
+PASS expiry and numeral/unit preferences Arabic
+.Invalid ID 0x00000000.
+PASS profile en-360x800-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-412x892-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-320x480-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-320x480-font2.0-dark-navy
+Invalid ID 0x00000000.
+PASS profile en-360x640-font1.3-dark-green
+Invalid ID 0x00000000.
+PASS profile en-640x360-font1.0-light-sand
+Invalid ID 0x00000000.
+PASS profile en-640x360-font2.0-dark-sand
+Invalid ID 0x00000000.
+PASS profile en-412x915-font1.0-light-navy
+Invalid ID 0x00000000.
+PASS profile en-393x852-font1.0-dark-green
+Invalid ID 0x00000000.
+PASS profile ar-360x800-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-412x892-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-320x480-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-320x480-font2.0-dark-navy
+Invalid ID 0x00000000.
+PASS profile ar-360x640-font1.3-dark-green
+Invalid ID 0x00000000.
+PASS profile ar-640x360-font1.0-light-sand
+Invalid ID 0x00000000.
+PASS profile ar-640x360-font2.0-dark-sand
+Invalid ID 0x00000000.
+PASS profile ar-412x915-font1.0-light-navy
+Invalid ID 0x00000000.
+PASS profile ar-393x852-font1.0-dark-green
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS startup API 26 English
+ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS startup API 26 Arabic
+.Invalid ID 0x00000000.
+PASS startup API 29 English
+Invalid ID 0x00000000.
+PASS startup API 29 Arabic
+.Invalid ID 0x00000000.
+E.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+E.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+E.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+E.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+E.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets-hires/compact-en-western-24h-160x160dp-xxxhdpi.png
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets-hires/compact-ar-eastern-12h-160x160dp-xxxhdpi.png
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets-hires/strip-en-western-24h-320x64dp-xxxhdpi.png
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets-hires/strip-ar-eastern-12h-320x64dp-xxxhdpi.png
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+E.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-110x110.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-130x117.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-140x140.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-160x160.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-177x213.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-240x240.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-en-400x400.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-110x110.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-130x117.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-140x140.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-160x160.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-177x213.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-240x240.png
+Two-widget native preview: /workspace/scratch/19cb5c838a1d/salah_regression_baseline/native-qa/screenshots/two-widgets/compact-ar-400x400.png
+E.Invalid ID 0x00000000.
+TIGHT MINIMUM compact [110, 110] smallest=9.75dp profile=compact [110, 110] ar=false east=false 12h=false font=0.85 small
+TIGHT MINIMUM compact [130, 117] smallest=11.75dp profile=compact [130, 117] ar=false east=false 12h=false font=0.85 small
+E.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Two-widget profile failure: strip-en-easternfalse-12htrue-font0.85-small-250x40: strip-en-easternfalse-12htrue-font0.85-small-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+Two-widget profile failure: strip-en-easternfalse-12htrue-font0.85-small-260x56: strip-en-easternfalse-12htrue-font0.85-small-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+Two-widget profile failure: strip-en-easternfalse-12htrue-font0.85-small-261x57: strip-en-easternfalse-12htrue-font0.85-small-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+Two-widget profile failure: strip-en-easternfalse-12htrue-font0.85-small-260x200: strip-en-easternfalse-12htrue-font0.85-small-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+Two-widget profile failure: strip-en-easternfalse-12htrue-font0.85-small-260x600: strip-en-easternfalse-12htrue-font0.85-small-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+Two-widget native matrix: 3195/3360 profiles passed
+E.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+......
+Time: 170.261
+There were 9 failures:
+1) exactSizesSurviveParcelAndCannotSwitchWidgetType(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: exact parcel [250, 40] widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertBoundsAndUniformText(TwoWidgetTest.java:294)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertProfile(TwoWidgetTest.java:418)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.exactSizesSurviveParcelAndCannotSwitchWidgetType(TwoWidgetTest.java:513)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+2) compactCountdownFitsWithoutShrinkingPrayerFonts(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: Header timer visible at 160x160
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertTimer(TwoWidgetTest.java:1109)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.compactCountdownFitsWithoutShrinkingPrayerFonts(TwoWidgetTest.java:1140)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+3) sixteenFractionalSizesShareBoundedBitmapPayload(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: Fractional geometry fits conservatively expected:<[widget_root:Rect(0, 0 - 140, 140):0, widget_background:Rect(0, 0 - 140, 140):0, widget_content:Rect(0, 0 - 140, 140):0, widget_header:Rect(6, 4 - 134, 17):0, widget_countdown:Rect(12, 4 - 102, 15):0:9.75:-1717364:Dhuhr in 10:00, widget_meta:Rect(102, 4 - 128, 15):0:9.75:-5193804:17 Oct, widget_prayer_list:Rect(6, 17 - 134, 136):0, widget_fajr_row:Rect(6, 17 - 134, 40):0, widget_fajr_name:Rect(12, 17 - 62, 40):0:13.75:-1498366028:Fajr, widget_fajr_time:Rect(62, 17 - 128, 40):0:13.75:-1498366028:05:04, widget_dhuhr_row:Rect(6, 40 - 134, 64):0, widget_dhuhr_name:Rect(12, 40 - 62, 64):0:13.75:-1717364:Dhuhr, widget_dhuhr_time:Rect(62, 40 - 128, 64):0:13.75:-1717364:12:10, widget_asr_row:Rect(6, 64 - 134, 88):0, widget_asr_name:Rect(12, 64 - 62, 88):0:13.75:-789008:Asr, widget_asr_time:Rect(62, 64 - 128, 88):0:13.75:-789008:15:27, widget_maghrib_row:Rect(6, 88 - 134, 112):0, widget_maghrib_name:Rect(12, 88 - 62, 112):0:13.75:-789008:Maghrib, widget_maghrib_time:Rect(62, 88 - 128, 112):0:13.75:-789008:17:57, widget_isha_row:Rect(6, 112 - 134, 136):0, widget_isha_name:Rect(12, 112 - 62, 136):0:13.75:-789008:Isha, widget_isha_time:Rect(62, 112 - 128, 136):0:13.75:-789008:19:10]> but was:<[widget_root:Rect(0, 0 - 140, 140):0, widget_background:Rect(0, 0 - 140, 140):0, widget_content:Rect(0, 0 - 140, 140):0, widget_header:Rect(6, 4 - 134, 17):0, widget_countdown:Rect(12, 4 - 102, 15):0:9.75:-1717364:Dhuhr in 09:59, widget_meta:Rect(102, 4 - 128, 15):0:9.75:-5193804:17 Oct, widget_prayer_list:Rect(6, 17 - 134, 136):0, widget_fajr_row:Rect(6, 17 - 134, 40):0, widget_fajr_name:Rect(12, 17 - 62, 40):0:13.75:-1498366028:Fajr, widget_fajr_time:Rect(62, 17 - 128, 40):0:13.75:-1498366028:05:04, widget_dhuhr_row:Rect(6, 40 - 134, 64):0, widget_dhuhr_name:Rect(12, 40 - 62, 64):0:13.75:-1717364:Dhuhr, widget_dhuhr_time:Rect(62, 40 - 128, 64):0:13.75:-1717364:12:10, widget_asr_row:Rect(6, 64 - 134, 88):0, widget_asr_name:Rect(12, 64 - 62, 88):0:13.75:-789008:Asr, widget_asr_time:Rect(62, 64 - 128, 88):0:13.75:-789008:15:27, widget_maghrib_row:Rect(6, 88 - 134, 112):0, widget_maghrib_name:Rect(12, 88 - 62, 112):0:13.75:-789008:Maghrib, widget_maghrib_time:Rect(62, 88 - 128, 112):0:13.75:-789008:17:57, widget_isha_row:Rect(6, 112 - 134, 136):0, widget_isha_name:Rect(12, 112 - 62, 136):0:13.75:-789008:Isha, widget_isha_time:Rect(62, 112 - 128, 136):0:13.75:-789008:19:10]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.sixteenFractionalSizesShareBoundedBitmapPayload(TwoWidgetTest.java:544)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+4) physicalPixelAndFallbackFontBoundsAtLauncherDensities(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: hdpi [250, 40]dp widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertBoundsAndUniformText(TwoWidgetTest.java:294)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertProfile(TwoWidgetTest.java:418)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.physicalPixelAndFallbackFontBoundsAtLauncherDensities(TwoWidgetTest.java:567)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+5) syntheticAllDayTimesDoNotLoseDigitsOrMeridiems(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: midnight/noon/meridiem widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertBoundsAndUniformText(TwoWidgetTest.java:294)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertProfile(TwoWidgetTest.java:418)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.syntheticAllDayTimesDoNotLoseDigitsOrMeridiems(TwoWidgetTest.java:650)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+6) installedWidgetsNeverCreateCountdownMinuteRefreshAndCleanOldReceivers(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: No countdown means no recurring minute work regardless of app preferences
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.installedWidgetsNeverCreateCountdownMinuteRefreshAndCleanOldReceivers(TwoWidgetTest.java:1013)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+7) nativePreviewImagesCoverBothMinimumAndLargerTypes(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: preview [250, 40] widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertBoundsAndUniformText(TwoWidgetTest.java:294)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertProfile(TwoWidgetTest.java:418)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.nativePreviewImagesCoverBothMinimumAndLargerTypes(TwoWidgetTest.java:711)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+8) tightLegacyCellSizesKeepAllTextInsideNativeBounds(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: strip [250, 40] ar=false east=false 12h=true font=0.85 small widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertBoundsAndUniformText(TwoWidgetTest.java:294)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.assertProfile(TwoWidgetTest.java:418)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.tightLegacyCellSizesKeepAllTextInsideNativeBounds(TwoWidgetTest.java:469)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+9) completeNativeSizeLanguageNumeralTimeAndFontMatrix(ae.prayertimes.abudhabi.TwoWidgetTest)
+java.lang.AssertionError: Two-widget matrix failures: [strip-en-easternfalse-12htrue-font0.85-small-250x40: strip-en-easternfalse-12htrue-font0.85-small-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-small-260x56: strip-en-easternfalse-12htrue-font0.85-small-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-small-261x57: strip-en-easternfalse-12htrue-font0.85-small-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-small-260x200: strip-en-easternfalse-12htrue-font0.85-small-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-small-260x600: strip-en-easternfalse-12htrue-font0.85-small-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-normal-250x40: strip-en-easternfalse-12htrue-font0.85-normal-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-normal-260x56: strip-en-easternfalse-12htrue-font0.85-normal-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-normal-261x57: strip-en-easternfalse-12htrue-font0.85-normal-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-normal-260x200: strip-en-easternfalse-12htrue-font0.85-normal-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-normal-260x600: strip-en-easternfalse-12htrue-font0.85-normal-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-large-250x40: strip-en-easternfalse-12htrue-font0.85-large-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-large-260x56: strip-en-easternfalse-12htrue-font0.85-large-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-large-261x57: strip-en-easternfalse-12htrue-font0.85-large-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-large-260x200: strip-en-easternfalse-12htrue-font0.85-large-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font0.85-large-260x600: strip-en-easternfalse-12htrue-font0.85-large-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-small-250x40: strip-en-easternfalse-12htrue-font1.0-small-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-small-260x56: strip-en-easternfalse-12htrue-font1.0-small-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-small-261x57: strip-en-easternfalse-12htrue-font1.0-small-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-small-260x200: strip-en-easternfalse-12htrue-font1.0-small-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-small-260x600: strip-en-easternfalse-12htrue-font1.0-small-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-normal-250x40: strip-en-easternfalse-12htrue-font1.0-normal-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-normal-260x56: strip-en-easternfalse-12htrue-font1.0-normal-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-normal-261x57: strip-en-easternfalse-12htrue-font1.0-normal-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-normal-260x200: strip-en-easternfalse-12htrue-font1.0-normal-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-normal-260x600: strip-en-easternfalse-12htrue-font1.0-normal-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-large-250x40: strip-en-easternfalse-12htrue-font1.0-large-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-large-260x56: strip-en-easternfalse-12htrue-font1.0-large-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-large-261x57: strip-en-easternfalse-12htrue-font1.0-large-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-large-260x200: strip-en-easternfalse-12htrue-font1.0-large-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.0-large-260x600: strip-en-easternfalse-12htrue-font1.0-large-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-small-250x40: strip-en-easternfalse-12htrue-font1.3-small-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-small-260x56: strip-en-easternfalse-12htrue-font1.3-small-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-small-261x57: strip-en-easternfalse-12htrue-font1.3-small-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-small-260x200: strip-en-easternfalse-12htrue-font1.3-small-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-small-260x600: strip-en-easternfalse-12htrue-font1.3-small-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-normal-250x40: strip-en-easternfalse-12htrue-font1.3-normal-250x40 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-normal-260x56: strip-en-easternfalse-12htrue-font1.3-normal-260x56 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-normal-261x57: strip-en-easternfalse-12htrue-font1.3-normal-261x57 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-normal-260x200: strip-en-easternfalse-12htrue-font1.3-normal-260x200 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size, strip-en-easternfalse-12htrue-font1.3-normal-260x600: strip-en-easternfalse-12htrue-font1.3-normal-260x600 widget_fajr_name [Fajr] is below the 9dp reading floor at a supported size]
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at ae.prayertimes.abudhabi.TwoWidgetTest.completeNativeSizeLanguageNumeralTimeAndFontMatrix(TwoWidgetTest.java:451)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+
+FAILURES!!!
+Tests run: 49,  Failures: 9
+

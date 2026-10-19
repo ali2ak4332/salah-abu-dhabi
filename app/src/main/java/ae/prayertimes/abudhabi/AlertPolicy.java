@@ -33,6 +33,25 @@ public final class AlertPolicy {
         return times!=null && times[index].equals(at.toLocalTime());
     }
 
+    /** Sunrise is a separate saved event, never a sixth prayer or an iqamah. */
+    public static Event nextSunrise(Schedule schedule, Instant now, boolean enabled) {
+        if(!enabled)return null;
+        LocalDate today=now.atZone(Schedule.ZONE).toLocalDate();
+        for(LocalDate date:schedule.days.tailMap(today,true).keySet()) {
+            Instant at=ZonedDateTime.of(date,schedule.days.get(date)[1],Schedule.ZONE).toInstant();
+            if(!at.isBefore(now))return new Event(at.toEpochMilli(),1);
+        }
+        return null;
+    }
+    public static boolean shouldNotifySunrise(Schedule schedule,long epochMillis,Instant now,long lastNotified) {
+        if(epochMillis<=0||epochMillis==lastNotified)return false;
+        long delay=now.toEpochMilli()-epochMillis;
+        if(delay<0||delay>MAX_LATENESS_MILLIS)return false;
+        ZonedDateTime at=Instant.ofEpochMilli(epochMillis).atZone(Schedule.ZONE);
+        LocalTime[] times=schedule.days.get(at.toLocalDate());
+        return times!=null&&times[1].equals(at.toLocalTime());
+    }
+
     public static final class Reminder {
         public final long epochMillis, prayerEpochMillis;
         public final int prayerIndex, leadMinutes;

@@ -1,24 +1,24 @@
 <resources>
-    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
-        <item name="android:fontFamily">sans</item>
-        <item name="android:colorAccent">#193D34</item>
+    <style name="AppThemeBase" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">#153F35</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:statusBarColor">#F5F7F3</item>
-        <item name="android:navigationBarColor">#F5F7F3</item>
-        <item name="android:windowBackground">#F5F7F3</item>
+        <item name="android:statusBarColor">#F6F4EE</item>
+        <item name="android:navigationBarColor">#F6F4EE</item>
+        <item name="android:windowBackground">#F6F4EE</item>
     </style>
-    <style name="AppThemeDark" parent="android:style/Theme.Material.NoActionBar">
-        <item name="android:fontFamily">sans</item>
-        <item name="android:colorAccent">#AFD2A8</item>
+    <style name="AppThemeDarkBase" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">#B5D6BC</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:windowBackground">#101714</item>
+        <item name="android:windowBackground">#101A17</item>
     </style>
-    <style name="DialogGreenLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#193D34</item></style>
-    <style name="DialogGreenDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#AFD2A8</item></style>
-    <style name="DialogNavyLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#203E63</item></style>
-    <style name="DialogNavyDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#B4C9EF</item></style>
-    <style name="DialogSandLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#654932</item></style>
-    <style name="DialogSandDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#E3C196</item></style>
+    <style name="AppTheme" parent="AppThemeBase" />
+    <style name="AppThemeDark" parent="AppThemeDarkBase" />
+    <style name="DialogGreenLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#153F35</item></style>
+    <style name="DialogGreenDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#B5D6BC</item></style>
+    <style name="DialogNavyLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#294E70</item></style>
+    <style name="DialogNavyDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#BED2E7</item></style>
+    <style name="DialogSandLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#705333</item></style>
+    <style name="DialogSandDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#E4C99E</item></style>
 </resources>

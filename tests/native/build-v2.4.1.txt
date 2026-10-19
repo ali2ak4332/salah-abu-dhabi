@@ -1,0 +1,39 @@
+----------
+1. WARNING in /workspace/scratch/19cb5c838a1d/countdown-work/source/prayer-app/app/src/main/java/ae/prayertimes/abudhabi/MainActivity.java (at line 261)
+	getWindow().setStatusBarColor(BG);getWindow().setNavigationBarColor(BG);
+	            ^^^^^^^^^^^^^^^^^^^^^
+The method setStatusBarColor(int) from the type Window is deprecated
+----------
+2. WARNING in /workspace/scratch/19cb5c838a1d/countdown-work/source/prayer-app/app/src/main/java/ae/prayertimes/abudhabi/MainActivity.java (at line 261)
+	getWindow().setStatusBarColor(BG);getWindow().setNavigationBarColor(BG);
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+The method setNavigationBarColor(int) from the type Window is deprecated
+----------
+3. WARNING in /workspace/scratch/19cb5c838a1d/countdown-work/source/prayer-app/app/src/main/java/ae/prayertimes/abudhabi/MainActivity.java (at line 262)
+	getWindow().getDecorView().setSystemUiVisibility(palette.dark?0:View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR|View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The method setSystemUiVisibility(int) from the type View is deprecated
+----------
+4. WARNING in /workspace/scratch/19cb5c838a1d/countdown-work/source/prayer-app/app/src/main/java/ae/prayertimes/abudhabi/MainActivity.java (at line 262)
+	getWindow().getDecorView().setSystemUiVisibility(palette.dark?0:View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR|View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+	                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The field View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR is deprecated
+----------
+5. WARNING in /workspace/scratch/19cb5c838a1d/countdown-work/source/prayer-app/app/src/main/java/ae/prayertimes/abudhabi/MainActivity.java (at line 262)
+	getWindow().getDecorView().setSystemUiVisibility(palette.dark?0:View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR|View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+	                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The field View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR is deprecated
+----------
+----------
+6. WARNING in /workspace/scratch/19cb5c838a1d/countdown-work/source/prayer-app/app/src/main/java/ae/prayertimes/abudhabi/PrayerWidget.java (at line 120)
+	ArrayList<SizeF> requested=options.getParcelableArrayList(AppWidgetManager.OPTION_APPWIDGET_SIZES);
+	                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The method getParcelableArrayList(String) from the type Bundle is deprecated
+----------
+6 problems (6 warnings)
+Unsigned APK: build/aligned.apk. Supply external signing credentials to create an installable update.
+PASS: coverage, midnight, time zone, sunrise exclusion, expiry, and all 2,235 prayer boundaries.
+PASS: alert opt-out, midnight, expiry, stale/duplicate/early protection and all 2235 prayer deliveries.
+PASS: independent reminders, opt-in/masks, setting changes, midnight/coverage, never early or at prayer, duplicates/stale checks and all 6705 reminder boundaries.
+PASS: 15 time/digit/countdown checks and 8 widget date/locale/time-zone checks.
+PASS: all 2235 adhan/estimated-iqamah boundaries, 64 Friday Dhuhr exclusions, custom offsets, disablement, midnight and final coverage.

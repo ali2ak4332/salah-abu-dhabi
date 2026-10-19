@@ -1,6 +1,8 @@
 package ae.prayertimes.abudhabi;
 
 import java.time.LocalTime;
+import java.time.Instant;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 /** Shared, locale-independent time arithmetic with an explicit digit preference. */
@@ -22,6 +24,11 @@ public final class DisplayFormat {
         String value=twelve?String.format(Locale.US,"%d:%02d %s",hour%12==0?12:hour%12,time.getMinute(),hour<12?(arabic?"ص":"AM"):(arabic?"م":"PM"))
             :String.format(Locale.US,"%02d:%02d",hour,time.getMinute());
         return digits(value,eastern);
+    }
+    /** The widget header always describes today's UAE date, even when next adhan is tomorrow. */
+    public static String widgetDate(Instant now, boolean arabic) {
+        Locale locale = arabic ? new Locale("ar") : Locale.ENGLISH;
+        return now.atZone(Schedule.ZONE).format(DateTimeFormatter.ofPattern("EEE · d MMM", locale));
     }
     public static String countdown(long seconds,boolean showSeconds,boolean eastern) {
         seconds=Math.max(0,seconds);

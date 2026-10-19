@@ -1,6 +1,8 @@
 import ae.prayertimes.abudhabi.DisplayFormat;
 import java.time.LocalTime;
+import java.time.Instant;
 import java.util.Locale;
+import java.util.TimeZone;
 
 /** Output boundaries that affect the app, launcher widgets and notifications. */
 public final class DisplayFormatTest {
@@ -27,6 +29,21 @@ public final class DisplayFormatTest {
             Locale.setDefault(new Locale("ar", "AE"));
             equal("05:02", DisplayFormat.time(LocalTime.of(5, 2), false, false, false), "explicit Western choice overrides device locale");
         } finally { Locale.setDefault(previous); }
-        System.out.println("PASS: 15 time, digit and countdown formatting boundaries.");
+        equal("Thu · 15 Oct", DisplayFormat.widgetDate(Instant.parse("2026-10-15T19:59:59Z"), false), "before UAE midnight");
+        equal("Fri · 16 Oct", DisplayFormat.widgetDate(Instant.parse("2026-10-15T20:00:00Z"), false), "UAE midnight changes weekday and date together");
+        equal("Fri · 1 Jan", DisplayFormat.widgetDate(Instant.parse("2026-12-31T20:00:00Z"), false), "UAE year boundary");
+        equal("Tue · 29 Feb", DisplayFormat.widgetDate(Instant.parse("2028-02-28T20:00:00Z"), false), "leap day");
+        Instant friday = Instant.parse("2026-10-16T08:00:00Z");
+        equal("الجمعة · 16 أكتوبر", DisplayFormat.digits(DisplayFormat.widgetDate(friday, true), false), "Arabic weekday and month with Western digits");
+        equal("الجمعة · ١٦ أكتوبر", DisplayFormat.digits(DisplayFormat.widgetDate(friday, true), true), "Arabic date with Eastern digits");
+        equal("Fri · ١٦ Oct", DisplayFormat.digits(DisplayFormat.widgetDate(friday, false), true), "English date respects Eastern numeral preference");
+        TimeZone previousZone = TimeZone.getDefault();
+        previous = Locale.getDefault();
+        try {
+            TimeZone.setDefault(TimeZone.getTimeZone("America/Los_Angeles"));
+            Locale.setDefault(Locale.JAPAN);
+            equal("Fri · 16 Oct", DisplayFormat.widgetDate(Instant.parse("2026-10-15T20:00:00Z"), false), "travel and device locale do not change the UAE header");
+        } finally { TimeZone.setDefault(previousZone); Locale.setDefault(previous); }
+        System.out.println("PASS: 15 time/digit/countdown checks and 8 widget date/locale/time-zone checks.");
     }
 }

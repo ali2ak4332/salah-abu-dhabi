@@ -1,0 +1,21 @@
+warning: [options] bootstrap class path not set in conjunction with -source 8
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+4 warnings
+Unsigned APK: build/aligned.apk. Supply external signing credentials to create an installable update.
+warning: [options] bootstrap class path not set in conjunction with -source 8
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+4 warnings
+PASS: coverage, midnight, time zone, sunrise exclusion, expiry, and all 2,235 prayer boundaries.
+PASS: alert opt-out, midnight, expiry, stale/duplicate/early protection and all 2235 prayer deliveries.
+PASS: independent reminders, opt-in/masks, setting changes, midnight/coverage, never early or at prayer, duplicates/stale checks and all 6705 reminder boundaries.
+PASS: 15 time/digit/countdown checks and 8 widget date/locale/time-zone checks.
+PASS: all 2235 adhan/estimated-iqamah boundaries, 64 Friday Dhuhr exclusions, custom offsets, disablement, midnight and final coverage.
+PASS: independent sunrise policy for all 447 saved days; exact/early/late/duplicate/source validation, coverage, timezone and five-prayer separation.

@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ae.prayertimes.abudhabi" android:versionCode="7" android:versionName="1.6">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ae.prayertimes.abudhabi" android:versionCode="25" android:versionName="2.6">
     <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
@@ -16,13 +16,13 @@
                 <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".PrayerWidget" android:label="@string/widget_compact_name" android:exported="false">
+        <receiver android:name=".PrayerWidgetCompact" android:label="@string/widget_compact_name" android:exported="false">
             <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_compact_info" />
         </receiver>
-        <receiver android:name=".PrayerWidgetTall" android:label="@string/widget_tall_name" android:exported="false">
+        <receiver android:name=".PrayerWidgetStrip" android:label="@string/widget_strip_name" android:exported="false">
             <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
-            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_tall_info" />
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_strip_info" />
         </receiver>
     </application>
 </manifest>

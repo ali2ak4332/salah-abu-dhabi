@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent">
+  <ImageView android:id="@+id/widget_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:importantForAccessibility="no" android:src="@drawable/widget_dark_green" />
+  <LinearLayout android:id="@+id/widget_content" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="6dp">
+    <LinearLayout android:id="@+id/widget_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="6dp" android:paddingEnd="6dp" android:paddingBottom="2dp" android:orientation="horizontal" android:gravity="center_vertical">
+      <Chronometer android:id="@+id/widget_countdown" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingEnd="8dp" android:gravity="start|center_vertical" android:fontFeatureSettings="tnum" android:visibility="gone" />
+      <TextView android:id="@+id/widget_iqamah_minutes" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingEnd="8dp" android:gravity="start|center_vertical" android:fontFeatureSettings="tnum" android:visibility="invisible" android:text="" />
+      <TextView android:id="@+id/widget_meta" style="@style/WidgetName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="end|center_vertical" android:text="Abu Dhabi" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/widget_prayer_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical">
+      <LinearLayout android:id="@+id/widget_fajr_row" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center" android:paddingStart="6dp" android:paddingEnd="6dp">
+        <TextView android:id="@+id/widget_fajr_name" style="@style/WidgetName" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="start|center_vertical" android:text="Fajr" />
+        <TextView android:id="@+id/widget_fajr_time" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.3" android:gravity="right|center_vertical" android:layoutDirection="ltr" android:fontFeatureSettings="tnum" android:text="—" />
+      </LinearLayout>
+      <LinearLayout android:id="@+id/widget_dhuhr_row" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center" android:paddingStart="6dp" android:paddingEnd="6dp">
+        <TextView android:id="@+id/widget_dhuhr_name" style="@style/WidgetName" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="start|center_vertical" android:text="Dhuhr" />
+        <TextView android:id="@+id/widget_dhuhr_time" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.3" android:gravity="right|center_vertical" android:layoutDirection="ltr" android:fontFeatureSettings="tnum" android:text="—" />
+      </LinearLayout>
+      <LinearLayout android:id="@+id/widget_asr_row" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center" android:paddingStart="6dp" android:paddingEnd="6dp">
+        <TextView android:id="@+id/widget_asr_name" style="@style/WidgetName" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="start|center_vertical" android:text="Asr" />
+        <TextView android:id="@+id/widget_asr_time" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.3" android:gravity="right|center_vertical" android:layoutDirection="ltr" android:fontFeatureSettings="tnum" android:text="—" />
+      </LinearLayout>
+      <LinearLayout android:id="@+id/widget_maghrib_row" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center" android:paddingStart="6dp" android:paddingEnd="6dp">
+        <TextView android:id="@+id/widget_maghrib_name" style="@style/WidgetName" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="start|center_vertical" android:text="Maghrib" />
+        <TextView android:id="@+id/widget_maghrib_time" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.3" android:gravity="right|center_vertical" android:layoutDirection="ltr" android:fontFeatureSettings="tnum" android:text="—" />
+      </LinearLayout>
+      <LinearLayout android:id="@+id/widget_isha_row" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center" android:paddingStart="6dp" android:paddingEnd="6dp">
+        <TextView android:id="@+id/widget_isha_name" style="@style/WidgetName" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="start|center_vertical" android:text="Isha" />
+        <TextView android:id="@+id/widget_isha_time" style="@style/WidgetText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.3" android:gravity="right|center_vertical" android:layoutDirection="ltr" android:fontFeatureSettings="tnum" android:text="—" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

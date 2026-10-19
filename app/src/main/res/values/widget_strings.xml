@@ -1,6 +1,6 @@
 <resources>
-    <string name="widget_compact_name">Next prayer · 2 × 2</string>
-    <string name="widget_tall_name">Prayer timetable · 2 × 3</string>
-    <string name="widget_compact_description">The next prayer in Abu Dhabi. Tap to open the timetable.</string>
-    <string name="widget_tall_description">The next prayer and all five of today’s prayer times for Abu Dhabi.</string>
+    <string name="widget_compact_name">Compact · 2 × 2</string>
+    <string name="widget_strip_name">Horizontal · 4 × 1</string>
+    <string name="widget_compact_description">Today’s five Abu Dhabi prayer times with a live countdown to the next adhan or estimated iqamah. Tap to open.</string>
+    <string name="widget_strip_description">Today’s five Abu Dhabi prayer times in one horizontal strip. Tap to open and refresh.</string>
 </resources>

@@ -1,0 +1,12 @@
+{
+  "baseline": "2.5.1 / versionCode 24",
+  "release": "2.6 / versionCode 25",
+  "changed_production_files": [
+    "app/build.gradle",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/java/ae/prayertimes/abudhabi/AlertScheduler.java",
+    "app/src/main/java/ae/prayertimes/abudhabi/AlertPolicy.java",
+    "app/src/main/java/ae/prayertimes/abudhabi/MainActivity.java"
+  ],
+  "other_production_files_byte_identical": true
+}

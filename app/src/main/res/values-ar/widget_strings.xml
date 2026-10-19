@@ -1,6 +1,6 @@
 <resources>
-    <string name="widget_compact_name">الصلاة القادمة · ٢ × ٢</string>
-    <string name="widget_tall_name">مواقيت الصلاة · ٢ × ٣</string>
-    <string name="widget_compact_description">الصلاة القادمة في أبوظبي. اضغط لفتح الجدول.</string>
-    <string name="widget_tall_description">الصلاة القادمة ومواقيت الصلوات الخمس اليوم في أبوظبي.</string>
+    <string name="widget_compact_name">مدمجة · ٢ × ٢</string>
+    <string name="widget_strip_name">أفقية · ٤ × ١</string>
+    <string name="widget_compact_description">مواقيت الصلوات الخمس اليوم في أبوظبي مع عد تنازلي مباشر للأذان القادم أو الإقامة التقديرية. اضغط لفتح التطبيق.</string>
+    <string name="widget_strip_description">مواقيت الصلوات الخمس اليوم في أبوظبي في صف أفقي. اضغط لفتح التطبيق والتحديث.</string>
 </resources>

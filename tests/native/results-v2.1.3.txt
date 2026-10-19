@@ -1,0 +1,262 @@
+Salah Abu Dhabi2.1.3 / code16 — 17 October2026
+
+JUnit version 4.13.2
+[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS native switch geometry/accessibility en-figma-412x892 checked=false
+PASS native switch geometry/accessibility en-figma-alert-on-412x892 checked=true
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS native switch geometry/accessibility ar-figma-412x892 checked=false
+PASS native switch geometry/accessibility ar-figma-alert-on-412x892 checked=true
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS phase transitions and date controls English
+Invalid ID 0x00000000.
+PASS phase transitions and date controls Arabic
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS actual calendar and appearance choices English
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS actual calendar and appearance choices Arabic
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS settings and recreation English
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS settings and recreation Arabic
+.Invalid ID 0x00000000.
+PASS expiry and numeral/unit preferences English
+Invalid ID 0x00000000.
+PASS expiry and numeral/unit preferences Arabic
+.Invalid ID 0x00000000.
+PASS profile en-360x800-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-412x892-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-320x480-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-320x480-font2.0-dark-navy
+Invalid ID 0x00000000.
+PASS profile en-360x640-font1.3-dark-green
+Invalid ID 0x00000000.
+PASS profile en-640x360-font1.0-light-sand
+Invalid ID 0x00000000.
+PASS profile en-640x360-font2.0-dark-sand
+Invalid ID 0x00000000.
+PASS profile en-412x915-font1.0-light-navy
+Invalid ID 0x00000000.
+PASS profile en-393x852-font1.0-dark-green
+Invalid ID 0x00000000.
+PASS profile ar-360x800-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-412x892-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-320x480-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-320x480-font2.0-dark-navy
+Invalid ID 0x00000000.
+PASS profile ar-360x640-font1.3-dark-green
+Invalid ID 0x00000000.
+PASS profile ar-640x360-font1.0-light-sand
+Invalid ID 0x00000000.
+PASS profile ar-640x360-font2.0-dark-sand
+Invalid ID 0x00000000.
+PASS profile ar-412x915-font1.0-light-navy
+Invalid ID 0x00000000.
+PASS profile ar-393x852-font1.0-dark-green
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS startup API 26 English
+ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS startup API 26 Arabic
+.Invalid ID 0x00000000.
+PASS startup API 29 English
+Invalid ID 0x00000000.
+PASS startup API 29 Arabic
+.Invalid ID 0x00000000.
+PASS widget 24 twelve-hour/Eastern-numeral/font1.0/1.3/2.0 rendered profiles at minimum compact/expanded sizes
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS widget settings cold/warm/repeated intents, root + all six submenu recreations, Back and Cancel in both languages
+.Invalid ID 0x00000000.
+PASS widget hide-seconds snapshot, numeral preference, stopped prior clock and reapply back to live seconds
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS process-restored widget page consumes original shortcut and remains dismissed on next recreation
+.Invalid ID 0x00000000.
+SMOKE only: below declared launcher resize minimum en-compact-small-110x110 minimum=140x160
+PASS widget native bounds en-compact-small-140x160
+PASS widget native bounds en-compact-small-160x160
+PASS widget native bounds en-compact-small-140x219
+PASS widget native bounds en-compact-small-140x220
+PASS widget native bounds en-compact-small-160x240
+PASS widget native bounds en-compact-small-200x300
+PASS widget native bounds en-compact-small-300x300
+SMOKE only: below declared launcher resize minimum en-compact-normal-110x110 minimum=140x160
+PASS widget native bounds en-compact-normal-140x160
+PASS widget native bounds en-compact-normal-160x160
+PASS widget native bounds en-compact-normal-140x219
+PASS widget native bounds en-compact-normal-140x220
+PASS widget native bounds en-compact-normal-160x240
+PASS widget native bounds en-compact-normal-200x300
+PASS widget native bounds en-compact-normal-300x300
+SMOKE only: below declared launcher resize minimum en-compact-large-110x110 minimum=140x160
+PASS widget native bounds en-compact-large-140x160
+PASS widget native bounds en-compact-large-160x160
+PASS widget native bounds en-compact-large-140x219
+PASS widget native bounds en-compact-large-140x220
+PASS widget native bounds en-compact-large-160x240
+PASS widget native bounds en-compact-large-200x300
+PASS widget native bounds en-compact-large-300x300
+SMOKE only: below declared launcher resize minimum en-tall-small-110x110 minimum=140x160
+PASS widget native bounds en-tall-small-140x160
+PASS widget native bounds en-tall-small-160x160
+PASS widget native bounds en-tall-small-140x219
+PASS widget native bounds en-tall-small-140x220
+PASS widget native bounds en-tall-small-160x240
+PASS widget native bounds en-tall-small-200x300
+PASS widget native bounds en-tall-small-300x300
+SMOKE only: below declared launcher resize minimum en-tall-normal-110x110 minimum=140x160
+PASS widget native bounds en-tall-normal-140x160
+PASS widget native bounds en-tall-normal-160x160
+PASS widget native bounds en-tall-normal-140x219
+PASS widget native bounds en-tall-normal-140x220
+PASS widget native bounds en-tall-normal-160x240
+PASS widget native bounds en-tall-normal-200x300
+PASS widget native bounds en-tall-normal-300x300
+SMOKE only: below declared launcher resize minimum en-tall-large-110x110 minimum=140x160
+PASS widget native bounds en-tall-large-140x160
+PASS widget native bounds en-tall-large-160x160
+PASS widget native bounds en-tall-large-140x219
+PASS widget native bounds en-tall-large-140x220
+PASS widget native bounds en-tall-large-160x240
+PASS widget native bounds en-tall-large-200x300
+PASS widget native bounds en-tall-large-300x300
+SMOKE only: below declared launcher resize minimum ar-compact-small-110x110 minimum=140x160
+PASS widget native bounds ar-compact-small-140x160
+PASS widget native bounds ar-compact-small-160x160
+PASS widget native bounds ar-compact-small-140x219
+PASS widget native bounds ar-compact-small-140x220
+PASS widget native bounds ar-compact-small-160x240
+PASS widget native bounds ar-compact-small-200x300
+PASS widget native bounds ar-compact-small-300x300
+SMOKE only: below declared launcher resize minimum ar-compact-normal-110x110 minimum=140x160
+PASS widget native bounds ar-compact-normal-140x160
+PASS widget native bounds ar-compact-normal-160x160
+PASS widget native bounds ar-compact-normal-140x219
+PASS widget native bounds ar-compact-normal-140x220
+PASS widget native bounds ar-compact-normal-160x240
+PASS widget native bounds ar-compact-normal-200x300
+PASS widget native bounds ar-compact-normal-300x300
+SMOKE only: below declared launcher resize minimum ar-compact-large-110x110 minimum=140x160
+PASS widget native bounds ar-compact-large-140x160
+PASS widget native bounds ar-compact-large-160x160
+PASS widget native bounds ar-compact-large-140x219
+PASS widget native bounds ar-compact-large-140x220
+PASS widget native bounds ar-compact-large-160x240
+PASS widget native bounds ar-compact-large-200x300
+PASS widget native bounds ar-compact-large-300x300
+SMOKE only: below declared launcher resize minimum ar-tall-small-110x110 minimum=140x160
+PASS widget native bounds ar-tall-small-140x160
+PASS widget native bounds ar-tall-small-160x160
+PASS widget native bounds ar-tall-small-140x219
+PASS widget native bounds ar-tall-small-140x220
+PASS widget native bounds ar-tall-small-160x240
+PASS widget native bounds ar-tall-small-200x300
+PASS widget native bounds ar-tall-small-300x300
+SMOKE only: below declared launcher resize minimum ar-tall-normal-110x110 minimum=140x160
+PASS widget native bounds ar-tall-normal-140x160
+PASS widget native bounds ar-tall-normal-160x160
+PASS widget native bounds ar-tall-normal-140x219
+PASS widget native bounds ar-tall-normal-140x220
+PASS widget native bounds ar-tall-normal-160x240
+PASS widget native bounds ar-tall-normal-200x300
+PASS widget native bounds ar-tall-normal-300x300
+SMOKE only: below declared launcher resize minimum ar-tall-large-110x110 minimum=140x160
+PASS widget native bounds ar-tall-large-140x160
+PASS widget native bounds ar-tall-large-160x160
+PASS widget native bounds ar-tall-large-140x219
+PASS widget native bounds ar-tall-large-140x220
+PASS widget native bounds ar-tall-large-160x240
+PASS widget native bounds ar-tall-large-200x300
+PASS widget native bounds ar-tall-large-300x300
+.Invalid ID 0x00000000.
+PASS 16 widget system/app-language/numeral/size combinations, all five rows, localized countdown and recovery
+.Invalid ID 0x00000000.
+PASS native Chronometer ticks for three seconds with no new RemoteViews/app refresh
+.Invalid ID 0x00000000.
+Intent = Intent { act=ae.prayertimes.abudhabi.WIDGET_REFRESH cmp=ae.prayertimes.abudhabi/.PrayerWidget }; Matching wrappers: [Wrapper[receiver=[ae.prayertimes.abudhabi.PrayerWidget@4ee88c7c], context=[android.app.ContextImpl@2daa96f5], intentFilter=[android.content.IntentFilter@7fd715c7]]]
+Invalid ID 0x00000000.
+Intent = Intent { act=ae.prayertimes.abudhabi.WIDGET_REFRESH cmp=ae.prayertimes.abudhabi/.PrayerWidget }; Matching wrappers: [Wrapper[receiver=[ae.prayertimes.abudhabi.PrayerWidget@4ee88c7c], context=[android.app.ContextImpl@2daa96f5], intentFilter=[android.content.IntentFilter@7fd715c7]]]
+Invalid ID 0x00000000.
+Intent = Intent { act=ae.prayertimes.abudhabi.WIDGET_REFRESH cmp=ae.prayertimes.abudhabi/.PrayerWidget }; Matching wrappers: [Wrapper[receiver=[ae.prayertimes.abudhabi.PrayerWidget@4ee88c7c], context=[android.app.ContextImpl@2daa96f5], intentFilter=[android.content.IntentFilter@7fd715c7]]]
+Invalid ID 0x00000000.
+Intent = Intent { act=ae.prayertimes.abudhabi.WIDGET_REFRESH cmp=ae.prayertimes.abudhabi/.PrayerWidget }; Matching wrappers: [Wrapper[receiver=[ae.prayertimes.abudhabi.PrayerWidget@4ee88c7c], context=[android.app.ContextImpl@2daa96f5], intentFilter=[android.content.IntentFilter@7fd715c7]]]
+Invalid ID 0x00000000.
+PASS widget refresh broadcast, direct widget-settings launch, localized labels and 40dp+ click targets
+.Invalid ID 0x00000000.
+PASS widget missing timetable, before coverage, expiry and stale-clock cleanup
+.Invalid ID 0x00000000.
+PASS widget opacity 0/65/85/100, Green/Navy/Sand, Light/Dark, both sizes/languages
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS minute snapshots use one bounded inexact non-wakeup RTC alarm, preserve prayer alarms, and cancel for seconds/expiry/no widgets
+.Invalid ID 0x00000000.
+PASS widget 80 adhan/iqamah boundary reapplications, Friday exclusion, UAE midnight and official row times
+.Invalid ID 0x00000000.
+PASS actual providers enable/update/options-change/resize/refresh/minute/delete/disable callbacks without a crash
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS widget API26 responsive parcel/apply/reapply
+.Invalid ID 0x00000000.
+PASS widget API29 responsive parcel/apply/reapply
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+...
+Time: 43.723
+
+OK (29 tests)
+

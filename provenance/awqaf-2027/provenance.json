@@ -1,0 +1,211 @@
+{
+  "title": "Official Awqaf Abu Dhabi prayer timetable, 2027",
+  "retrieved_at_utc": "2026-10-16T20:25:28Z",
+  "publisher": "UAE General Authority of Islamic Affairs, Endowments and Zakat (Awqaf)",
+  "official_web_page": "https://www.awqaf.gov.ae/prayer-times",
+  "official_api_endpoint": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+  "official_locations_endpoint": "https://internationalprayertime.awqaf.gov.ae/api/v1/location/emirates?lang=en",
+  "website_source_assets": [
+    "https://www.awqaf.gov.ae/assets/index-D4sIhbnv.js",
+    "https://www.awqaf.gov.ae/assets/index-DvEdaU5G.js",
+    "https://www.awqaf.gov.ae/assets/prayer-CcrT9yuq.js"
+  ],
+  "retrieval_method": "Read-only POST queries to the same public prayer-time service called by the official website, using the website public client configuration. No user credentials, location, or personal information sent. Authentication material is not included in these artifacts.",
+  "api_location": {
+    "city": "Abu Dhabi - Abu Dhabi",
+    "official_id": 36,
+    "country": "United Arab Emirates"
+  },
+  "api_method": {
+    "official": true,
+    "name": "Official Times"
+  },
+  "time_zone": "Asia/Dubai",
+  "utc_offset": "+04:00",
+  "time_format": "HH:mm, 24-hour local UAE time",
+  "range": {
+    "start": "2027-01-01",
+    "end": "2027-12-31",
+    "days": 365
+  },
+  "mapping": {
+    "date": "date",
+    "fajr": "fajer",
+    "sunrise": "shuroq",
+    "dhuhr": "dhohur",
+    "asr": "aser",
+    "maghrib": "maghreb",
+    "isha": "isha"
+  },
+  "normalization": "Only renamed API fields to the existing app CSV columns. Prayer time strings copied verbatim; no calculation, adjustment, rounding, or projection.",
+  "existing_app_baseline": {
+    "start": "2026-10-11",
+    "end": "2027-10-10",
+    "days": 365,
+    "sha256": "eaeb18f86f854ae11ed6f34c8415402ff124e97c24b7f15707804a39befaa5ea",
+    "preservation": "Original CSV bytes including header and all original 365 rows unchanged; appended 82 rows from 2027-10-11 through 2027-12-31."
+  },
+  "overlap_audit": {
+    "start": "2027-01-01",
+    "end": "2027-10-10",
+    "days": 283,
+    "prayer_and_sunrise_values": 1698,
+    "mismatches": 0
+  },
+  "validation": {
+    "result": "PASS",
+    "official_2027_rows": 365,
+    "extended_app_rows": 447,
+    "extension_rows": 82,
+    "existing_283_overlap_rows_exact_match": true,
+    "original_365_rows_byte_identical": true,
+    "maximum_day_to_day_change_minutes": {
+      "fajr": 2,
+      "sunrise": 2,
+      "dhuhr": 1,
+      "asr": 1,
+      "maghrib": 2,
+      "isha": 2
+    }
+  },
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-01-01",
+        "end_date": "2027-01-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-01.json",
+      "sha256": "1b96b24fe4f08004cb7c086533185faf6cc0388ea5bf4d68d22e64ebc915bc8c"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-02-01",
+        "end_date": "2027-02-28",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-02.json",
+      "sha256": "a51bc025724a9ffb1de126207dbde96de1dc17f68a255abbe345c0963ba22b94"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-03-01",
+        "end_date": "2027-03-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-03.json",
+      "sha256": "a1f368e875000e450b80c616240d353eec493b4f9f09bc881ef70600dd9aa813"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-04-01",
+        "end_date": "2027-04-30",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-04.json",
+      "sha256": "f091862fe623d2682a5956a983f1d45a0bc2687f9688761894ac162973a628c9"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-05-01",
+        "end_date": "2027-05-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-05.json",
+      "sha256": "38ee8df8a4afe01e06047e0471121aff31226f6bc3edf840aaf0b6331b74ac27"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-06-01",
+        "end_date": "2027-06-30",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-06.json",
+      "sha256": "166b3a347c0632c085cda3c2e4c1e5574a775f67e30cdd87c1629cb0c485e92c"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-07-01",
+        "end_date": "2027-07-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-07.json",
+      "sha256": "12cf61eb82f061ea47460d9434f9555f2f547c7f6a2cfeb1978d07b7199a6f96"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-08-01",
+        "end_date": "2027-08-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-08.json",
+      "sha256": "72d33193c8035e5d89f6c4f6e982a5e89623c4908f179cd502facb0789488594"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-09-01",
+        "end_date": "2027-09-30",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-09.json",
+      "sha256": "8d6f5fd2c610cbb8242e1fd02fb66acb5ae337071d6c9811dc80bc68a07e550c"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-10-01",
+        "end_date": "2027-10-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-10.json",
+      "sha256": "9280fb9bbc8fafe4cc1de5f63f4d00cf671ff3b00a856f4447b251691b3e7284"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-11-01",
+        "end_date": "2027-11-30",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-11.json",
+      "sha256": "2310dec348688d8b6e1dcb511cb02858657236d07f0b09d5cdba3bdd373c5575"
+    },
+    {
+      "method": "POST",
+      "url": "https://internationalprayertime.awqaf.gov.ae/api/v1/prayertimes",
+      "json_body": {
+        "start_date": "2027-12-01",
+        "end_date": "2027-12-31",
+        "official_id": 36
+      },
+      "response_file": "raw/2027-12.json",
+      "sha256": "e677e1c6530f3bf4bd4abb0ca2f9ebb1cdbd7d9a77f8437c06bbc53562321647"
+    }
+  ],
+  "caveats": [
+    "Only 2027 API data was freshly retrieved. The app existing 2026 dates are retained verbatim, not replaced.",
+    "Times are the official dated entries returned at retrieval time; future revisions by the publisher are possible.",
+    "No 2028 or 2029 rows, estimated times, or iqamah values are included."
+  ],
+  "verified_at_utc": "2026-10-16T20:26:51Z"
+}

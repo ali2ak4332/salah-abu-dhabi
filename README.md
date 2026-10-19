@@ -1,115 +1,114 @@
-# Salah Abu Dhabi 1.6
+# Salah Abu Dhabi 2.6
 
-Offline Android prayer times for Abu Dhabi, using UAE Awqaf's saved timetable from 11 October 2026 to 10 October 2027. Independent personal app; not an official Awqaf product.
+Offline native Android prayer times for Abu Dhabi. Saved official Awqaf adhan data covers **11 October 2026–31 December 2027**, inclusive (447 days). Independent personal app, not an official Awqaf product.
 
-## Install or update
+## Install / update
 
-Open `Salah-Abu-Dhabi-v1.6.apk` on an Android 8.0+ phone and install. Version 1.6 uses the same package and signing certificate as the previous APK, so it can update it without uninstalling. The home-screen subtitle shows **v1.6** to confirm the new build is installed. If Android requests permission to install from Files, allow that installation source, then turn the permission off again afterwards if desired.
+Install `Salah-Abu-Dhabi-v2.6.apk` on Android 8.0 or later. This build retains package `ae.prayertimes.abudhabi`, increases version code to 25, and uses the same personal signing certificate as v1.9.1. Install over the existing app to retain settings. Do not uninstall or clear data to work around an installation error.
 
-## Enable the prayer chime
+The app continues to use platform fonts, preserving the conservative v1.9.1 recovery change. No bundled font is loaded at runtime. The earlier phone-specific crash was not reproduced and no phone crash log was supplied; passing host-side tests is not proof that the reported phone issue is fixed.
 
-1. Open the app and turn on **Prayer chime alerts**.
-2. Allow notifications when Android asks (Android 13+).
-3. Allow **Alarms & reminders** for precise prayer-time delivery (Android 12+).
-4. Open the **⋮ menu → Test chime**. Check notification volume and Do Not Disturb if silent.
+## New in 2.6: Shurooq notification
 
-The five prayers use a soft 1.05-second notification chime. Sunrise is excluded. The notification displays the scheduled UAE time and opens the app when tapped. There is no full adhan recording.
+- **Settings → Sunrise / الشروق** controls a separate daily notification at the official saved Awqaf sunrise time for Abu Dhabi.
+- Enabled by default in this update. It runs only when Android notifications and its own Sunrise channel are allowed; opening the update does not automatically request or change system permissions.
+- Its own channel uses the same short chime by default, with independent notification sound settings. It respects notification volume, channel mute and Do Not Disturb.
+- Prayer alerts, advance reminders, estimated iqamah, five-prayer widgets and saved appearance settings are preserved. Sunrise is not a prayer or iqamah and is never added to the prayer countdown.
+- Separate alarm and delivered-event records avoid collisions and repeat notifications. Past alerts over 15 minutes late are skipped. Reboot/unlock, app update, clock/timezone changes and reopening restore scheduling. A force-stop requires reopening.
+- Uses only the existing 447-day official timetable, fixed to Asia/Dubai. No inferred dates, internet access or automatic timetable update. The final sunrise notification is 31 December 2027.
+- Exact-alarm permission is optional; without it Android may delay the chime. Physical-phone delivery/sound and an actual upgrade still require a device check.
+- Full validation and limitations are in `VALIDATION-v2.6.md`. Install over the existing app without uninstalling.
 
-Alerts work with the app closed using Android's alarm system, with no continuously running service. They restore after reboot and unlocking, app updates and clock changes. Without precise-alarm permission Android may delay delivery; notifications more than 15 minutes late are skipped. Force-stop cancels alarms until the app is reopened. Phone battery restrictions, notification/channel settings, silent mode and Do Not Disturb can affect delivery or sound. The app respects those settings.
+## Retained from 2.5.1: widget regressions corrected
 
-In **⋮ → Prayer alert settings**, finish setup, change notification sound, manage permissions or read how background alerts work. Changing a channel's sound in Android overrides the bundled default. Alerts are off until enabled in the app; installing the update does not itself grant permissions.
+- Retains v2.5’s two widgets, rounded prayer highlights, lighter names, amber estimated-iqamah state and next-adhan/iqamah header.
+- Horizontal names stay at least 9dp; short strips reclaim decorative vertical padding so times stay readable too.
+- Compact reserves a readable header at normal sizes, measuring English/Arabic timer labels and both AM/PM forms. The date gives way when necessary. The smallest 110×110 and 130×117 cells may omit the header; enlarge the widget for easier reading.
+- Live seconds remain when Android’s native digits exactly match the selected Western or Eastern Arabic numerals. Other digit scripts use localized H:MM snapshots.
+- In the last minute, Compact shows the absolute target time (for example, “Iqamah at 12:30”) and stops its live timer. One non-wakeup display alarm requests this change and the actual boundary refresh.
+- **Android may delay either refresh. If the pre-boundary refresh itself is withheld, an old live timer can still pass zero until the launcher updates.** This is an explicit platform limitation, not a guaranteed zero clamp. Opening the app refreshes the widgets.
+- Main-app layout, official adhan times, chime, prayer/reminder alarm policy, saved settings and placed widget identities are preserved. A sub-millisecond display-boundary bug is corrected in the shared phase calculation.
+- Build, native test evidence and limitations are recorded in `VALIDATION-v2.5.1.md`. Version code 24; install over the existing app.
 
-## Add a widget
+Earlier release details are in `CHANGELOG.md` and the versioned validation reports.
 
-Open **⋮ → Add a home-screen widget** in the app and choose:
+## Main features
 
-- **2 × 2**: next prayer and its time.
-- **2 × 3**: next prayer plus today's five prayer times.
+- Five adhan rows; sunrise is shown separately, has its own notification setting, and is never treated as a prayer.
+- Live next-adhan countdown and optional estimated-iqamah countdown.
+- Previous/next day, Today and calendar picker, bounded to the saved timetable.
+- Arabic/English; 12/24-hour time; Western or Eastern Arabic numerals; optional countdown seconds.
+- Light/Dark/Follow phone and Green/Navy/Sand themes.
+- Settings, source details, widget controls and test chime under the top more menu.
+- Fixed Asia/Dubai time even while travelling. No location permission.
+- Offline; no account, tracking, internet permission or automatic timetable updates.
 
-Version 1.6 refines the Arabic 2 × 3 layout: larger prayer names and times, names aligned to the right and times to the left, and five evenly stretched rows that use the remaining widget height. The English and compact layouts keep their previous design.
+## Prayer chime and advance reminders
 
-Alternatively, long-press an empty home-screen area → Widgets → Salah Abu Dhabi. Both widgets can be resized. Actual cell sizes depend on the launcher. The tall widget switches to compact content when shortened. Tap a widget to open the app.
+Turn on **Prayer alerts**, allow Android notifications (Android 13+), and allow **Alarms & reminders** for precise timing (Android 12+). Use **Settings → Test chime** and check notification volume and Do Not Disturb.
 
-Widgets follow the app's Arabic/English setting and use UAE time. They refresh at prayer boundaries and midnight when allowed, with Android's periodic refresh as a fallback. If background timing is restricted, the display can remain stale until Android refreshes it or you open the app. During the estimated iqamah interval, both sizes show a live native countdown and the estimated target time. Android may postpone the transition at zero: if a minus sign appears, the estimate has passed; tap the widget to refresh. The widget's live countdown always includes seconds and follows the phone's numeral locale; all static times follow the app's format and numeral preferences.
+Five prayers use the existing soft 1.05-second chime, not a full adhan recording. Sunrise uses a separate setting and notification category described above. Notifications open the app. Alerts restore after reboot/unlock, app updates and clock changes. A force-stop cancels alarms until the app is opened again. Android battery restrictions, notification/channel settings and Do Not Disturb may delay or silence alerts; alerts more than 15 minutes late are skipped. Existing channel sound preferences are preserved. Notification category labels follow the app language.
 
-## App features and polish
+**Settings → Advance reminders** offers Off/5/10/15 minutes and individual prayer selection. Reminders are independent of the adhan switch, default off, and skip delivery more than two minutes late or at/after the prayer. They expire at adhan. Reminders use a separate non-idle exact alarm so they do not consume the main prayer alert's idle-alarm quota.
 
-- Five full-width horizontal prayer rows stacked vertically, with sunrise in the footer, in your chosen 12/24-hour format.
-- Live next-adhan countdown changes to estimated iqamah when adhan starts, then advances to the next adhan.
-- Calendar picker, previous/next day and Today.
-- Arabic/English with RTL layout and shared widget/notification language.
-- One-page home screen with no scrolling container: five prayer rows fill the available space below the countdown and date controls, with the alert switch always visible. Landscape uses two side-by-side panels. Text sizes adapt to the available tile space.
-- Test chime, widgets and source details are available from the top-right ⋮ menu.
-- Green and gold styling and 48dp touch targets for interactive controls.
-- Fixed Asia/Dubai time even if travelling; no location permission.
-- No account, tracking, internet permission or automatic data updates.
+Physical-phone notification timing, permission dialogs, sound, reboot recovery and battery behavior still need a real-device check.
 
-## Customization
+## Widgets
 
-Open **⋮ → Appearance** for Light, Dark or Follow phone, with Green, Navy or Sand colours. The home screen keeps its one-page layout.
+Choose **Compact · 2 × 2** or **Horizontal · 4 × 1** in the app's Add a widget menu or the home-screen widget picker. These are the only two entries. Both show today's five official saved adhan times, fixed to Asia/Dubai even while travelling. Sunrise is not included as a prayer.
 
-Open **⋮ → Time & numerals** for 12/24-hour time, Western (`123`) or Eastern Arabic (`١٢٣`) digits, and app countdown seconds. Time and numeral preferences apply to the app, static widget times and notification content; Android controls the system notification timestamp itself. Hiding countdown seconds rounds the remaining duration up to the next minute.
+The next adhan today has a warm highlight. The short date appears when space allows. The five rows/columns remain visible in English or Arabic and follow Western/Eastern numerals, 12/24-hour format, theme, opacity and text preferences. Background mode, Green/Navy/Sand, 100/85/65/0% opacity and Small/Normal/Large text are supported. Transparent mode uses white text and a warm next-prayer accent; choose a contrasting wallpaper.
 
-Open **⋮ → Widget style** for background mode (Match app / Light / Dark), colour, 100/85/65/0% background opacity, and Small/Normal/Large text. These settings apply to both widget sizes and all placed widgets. Text remains opaque; its maximum size adapts to available space. Transparent widgets use white text with a shadow, so readability depends on your wallpaper.
+Tap anywhere to open the timetable and refresh. Compact's header shows the next adhan, or estimated iqamah only during its selected interval. Live seconds use Android's Chronometer when its native digits match the saved numeral choice; otherwise the header uses a localized H:MM snapshot. In the final minute it requests an absolute target-time display. Horizontal remains timetable-only. Android may defer the non-wakeup refreshes; see the timing limits above.
 
-## Advance reminders
+Android can defer the countdown/date/highlight update during sleep or battery restrictions. Opening the app refreshes both widgets. No fabricated times appear outside the saved timetable: the five time fields show dashes and the widget's accessibility message explains that saved times are unavailable.
 
-Open **⋮ → Advance reminders** to select Off, 5, 10 or 15 minutes before prayer, then choose which prayers receive reminders. Reminders start off. They are independent of the existing prayer-time chime switch; no prayers selected pauses reminders. Sunrise is excluded, and the Awqaf timetable is unchanged.
+Host-side native Android tests cover API 26/29/35 rendering, sizes, density, languages/numerals, settings, resizing, lifecycle and failure recovery. Actual OEM launcher cell counts, TalkBack focus grouping and phone sleep/wake behavior still require a real-device check.
 
-Allow notifications and precise timing when requested. The separate advance-reminder notification category lets you manage its sound in Android settings. Battery saving can delay or skip advance reminders. Reminders over two minutes late, or at/after the prayer itself, are skipped. Reminder notifications automatically expire at the prayer time.
+## Estimated iqamah
 
-Regular prayer alerts retain their idle-capable alarm. Advance reminders use a separate non-idle exact alarm when permitted, to avoid consuming Android's idle-alarm quota shortly before the prayer alert. Existing reboot, clock-change and update recovery also restores reminder scheduling. Force-stop requires reopening the app.
+Under **Settings → Estimated iqamah**, disable the feature or choose each prayer's interval from 0–60 minutes (0 disables that prayer). Defaults: Fajr 25; Dhuhr 20; Asr 20; Maghrib 5; Isha 20 minutes after the scheduled adhan timestamp.
 
-## Estimated iqamah countdown
+These are editable estimates, not verified current official iqamah times. Defaults originate from an Awqaf official's statement reported by Al Bayan on 28 January 2009 and Al Ittihad on 29 January 2009. The historical articles do not explicitly distinguish start/end of adhan; counting from the saved adhan timestamp is the app's estimate. Follow your mosque. Friday Dhuhr is excluded because Jumuah has a separate schedule. No extra iqamah sound is added; official adhan rows and alerts remain unchanged.
 
-At the scheduled adhan time, the home countdown and both widgets switch to **Estimated iqamah**, showing the estimated start time and remaining duration. They return to the next adhan when the interval ends. The five prayer rows continue to show the official saved adhan times. There is no extra iqamah sound.
+Historical source: https://www.albayan.ae/across-the-uae/2009-01-28-1.397198
 
-Open **⋮ → Estimated iqamah** to turn this feature off, or set each prayer's interval from 1–60 minutes; 0 disables that prayer's countdown. Defaults are:
+## Timetable provenance
 
-| Prayer | Minutes after scheduled adhan |
-| --- | ---: |
-| Fajr | 25 |
-| Dhuhr | 20 |
-| Asr | 20 |
-| Maghrib | 5 |
-| Isha | 20 |
+Official page: https://www.awqaf.gov.ae/prayer-times
 
-These defaults come from an Awqaf deputy's statement reported by Al Bayan on **28 January 2009**, corroborated by Al Ittihad on 29 January 2009. No current Awqaf publication confirming all five intervals was found. The articles do not explicitly distinguish the start from the end of the adhan; this app counts from the scheduled adhan timestamp as an implementation estimate. Follow your mosque's current practice and adjust the intervals. These are **not verified 2026 official iqamah times**.
+- Original 365 days (2026-10-11–2027-10-10) were retrieved on 11 October 2026 for Abu Dhabi and are preserved byte-for-byte. `Source-Timetable.pdf` is the original 365-day compilation, not the extended timetable.
+- All 365 dates for 2027 were retrieved from the public service used by the official Awqaf website on 16 October 2026: location **Abu Dhabi - Abu Dhabi**, official ID **36**, method **Official Times**, `official: true`.
+- All 283 overlapping dates match all six existing prayer/sunrise values exactly. The final 82 dates were appended.
+- Raw monthly responses, exact request bodies, hashes, normalized data and reproducible checks are in `provenance/awqaf-2027/`. No authentication material is included.
+- `app/src/main/assets/times.csv` is the production asset. All times are HH:mm UAE local time. No extrapolation, forecast or astronomical calculation is used.
 
-- Historical source: https://www.albayan.ae/across-the-uae/2009-01-28-1.397198
-- Friday notice: https://www.awqaf.gov.ae/web.files/KhutbaAttachment/12-12-2025-ar.pdf
-
-Friday Dhuhr is excluded from iqamah estimates because Jumuah has a separate schedule. The app does not calculate a Jumuah start from Dhuhr. The regular and advance adhan alerts retain their existing behavior.
-
-A separate silent widget refresh is scheduled at the estimated iqamah target without using the prayer alert's idle-alarm quota. Android may defer this refresh under battery restrictions. The final saved Isha may finish its estimated countdown after its adhan; no later adhan times are invented.
-
-## Timetable source
-
-https://www.awqaf.gov.ae/prayer-times
-
-UAE General Authority of Islamic Affairs, Endowments & Zakat; Abu Dhabi > Corniche; retrieved 11 October 2026. `Source-Timetable.pdf` is the 365-day compilation made in this conversation. The app's CSV matches all 2,190 times. These are adhan times, not iqamah; Friday Dhuhr is not a separate Jumuah service schedule. No adhan times are calculated or extrapolated; iqamah targets are separate editable estimates. A new verified timetable is required after 10 October 2027.
-
-## Validation and limits
-
-The APK compiles against API 35 and its signature is verified. Pure Java tests cover every one of the 1,825 prayer boundaries, 5,475 advance-reminder boundaries and 1,825 estimated-iqamah transitions, plus all 52 Friday exclusions, custom/disabled intervals, UAE midnight, final Isha and timetable expiry. Fifteen formatting checks cover noon/midnight, Arabic numerals and countdown rounding. Resource compilation checks both widgets and Arabic strings. The package and signing certificate support updating the previous build. The home screen passed 18 Android API 35 native-graphics layout/theme profiles, 40 live phase transitions, four date-browsing checks, and settings recreation through Robolectric. Profiles include 320×480, 360×640 and 640×360, English/Arabic, and font scales up to 2.0, with no scrolling, clipping or overflow. Both widgets also passed four style profiles and 24 adhan/iqamah boundary cases, including the 110×90 compact and 110×180 tall minimums in Arabic with large text. These checks exercise Android View measurement and rendering rather than a physical phone or launcher.
-
-Version 1.6 additionally passed 12 Arabic tall-widget cases using Android AppWidgetHostView with responsive layout selection and launcher padding: 180×280 and 200×300 host sizes, plus the 110×180 content minimum, normal and large system fonts, before adhan and during estimated iqamah. The content filled the available host area with no clipped labels. English tall and Arabic compact regression samples also passed.
-
-No phone or emulator was available: actual notification delivery, sound playback, permission dialogs and launcher rendering still need a device check. Use Test chime after installation and check the next scheduled prayer alert.
+Run `python3 provenance/awqaf-2027/validate_timetable.py` for the offline provenance check. Future official revisions remain possible; the app does not fetch updates. A new verified timetable is required after 31 December 2027. Friday Dhuhr is not a separate Jumuah service schedule.
 
 ## Build
 
-Android Studio: open this project with JDK 17, Gradle 8.9, Android Gradle Plugin 8.7.3, API 35 and Build Tools 35.0.0. There is no bundled Gradle wrapper or SDK. Run `gradle :app:assembleDebug` or use Android Studio's build action.
+Open in Android Studio with JDK 17, Gradle 8.9, Android Gradle Plugin 8.7.3, API 35 and Build Tools 35.0.0. Run `gradle :app:assembleDebug`. The SDK, JDK, Gradle distribution and wrapper are not bundled.
 
-Direct build (Linux/macOS): set `ANDROID_PLATFORM_JAR` to the API 35 `android.jar` and `ANDROID_BUILD_TOOLS` to Build Tools 35.0.0. Run `bash build-local.sh` with Java 17 and zip. It uses javac by default, or Eclipse ECJ if `ECJ_JAR` is set. Version 1.6 was compiled with javac from JDK 17.
+For the standalone Linux/macOS build:
 
-For an update-compatible personal build, copy `signing/personal-test.keystore` to `build/personal-test.keystore` before building. Test alias: `androiddebugkey`; store/key password: `android`. This is a personal test identity. Use a separate protected release key before public distribution.
+```sh
+export ANDROID_PLATFORM_JAR=/absolute/path/to/platforms/android-35/android.jar
+export ANDROID_BUILD_TOOLS=/absolute/path/to/build-tools/35.0.0
+bash build-local.sh
+```
 
-## Android implementation references
+This uses `javac` by default, or Eclipse ECJ when `ECJ_JAR` is set. Without signing credentials it produces `build/aligned.apk` (unsigned) and runs the pure-Java tests.
 
-- Alarms: https://developer.android.com/develop/background-work/services/alarms
-- Notification permission: https://developer.android.com/develop/ui/compose/notifications/notification-permission
-- Notification channels: https://developer.android.com/develop/ui/compose/notifications/channels
-- Widgets: https://developer.android.com/develop/ui/views/appwidgets/layouts
+For an update-compatible signed build, use the original private key kept **outside this project**. Set `SALAH_KEYSTORE`, `SALAH_KEY_ALIAS`, `SALAH_STORE_PASSWORD` and `SALAH_KEY_PASSWORD` privately, then run the build. Credentials are read via environment variables; do not put them in source or commit them. No replacement key is generated. Android Studio's default debug signature cannot update the supplied APK.
 
-- Doze and alarms: https://developer.android.com/training/monitoring-device-state/doze-standby
+## Validation
+
+See `VALIDATION-v2.6.md` for this release's actual checks and limitations; earlier validation files record historical releases. Older `VALIDATION-v1.9*.md` files are historical, not claims about the current release. Pure-Java tests cover every saved prayer/reminder/iqamah/sunrise boundary, 64 Friday exclusions, expiry, midnight, custom offsets, numeral/time formats and source preservation. The source includes the native Android host-side test harness under `tests/native/`.
+
+This is a personal installable build, not a Google Play production-readiness certification. No physical phone was available, and a hardware-accelerated emulator was unavailable.
+
+## Design and third-party sources
+
+Approved design: https://www.figma.com/design/qUiRjBYfMHu0CNmyAjStrC?node-id=2-840
+
+Exact asset export provenance and density conversion notes are in `design/README.md`. Noto design-source fonts remain outside Android resources, with their SIL OFL license and attribution. They are not loaded or packaged in the APK; see `THIRD_PARTY_NOTICES.md`.

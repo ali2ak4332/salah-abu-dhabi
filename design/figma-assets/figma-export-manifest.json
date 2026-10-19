@@ -1,0 +1,57 @@
+[
+  {
+    "file": "more-slot.svg",
+    "groupId": "3:143",
+    "nodeId": "3:142",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "file": "chevron-left-slot.svg",
+    "groupId": "3:166",
+    "nodeId": "3:165",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "file": "calendar-slot.svg",
+    "groupId": "3:173",
+    "nodeId": "3:172",
+    "width": 18,
+    "height": 18
+  },
+  {
+    "file": "chevron-right-slot.svg",
+    "groupId": "3:179",
+    "nodeId": "3:178",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "file": "sunrise-slot.svg",
+    "groupId": "3:212",
+    "nodeId": "3:211",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "file": "bell-slot.svg",
+    "groupId": "3:398",
+    "nodeId": "3:397",
+    "width": 22,
+    "height": 22
+  },
+  {
+    "file": "iqamah-clock-slot.svg",
+    "groupId": "3:409",
+    "nodeId": "3:408",
+    "width": 16,
+    "height": 16
+  },
+  {
+    "file": "phase-dot.svg",
+    "nodeId": "3:155",
+    "width": 6,
+    "height": 6
+  }
+]

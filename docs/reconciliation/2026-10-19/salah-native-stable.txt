@@ -1,0 +1,244 @@
+warning: [options] bootstrap class path not set in conjunction with -source 8
+Note: /workspace/scratch/b6a625937fbe/work/salah/tests/native/src/ae/prayertimes/abudhabi/SunriseNotificationTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+JUnit version 4.13.2
+[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS native switch geometry/accessibility en-figma-412x892 checked=false
+PASS native switch geometry/accessibility en-figma-alert-on-412x892 checked=true
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS native switch geometry/accessibility ar-figma-412x892 checked=false
+PASS native switch geometry/accessibility ar-figma-alert-on-412x892 checked=true
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS phase transitions and date controls English
+Invalid ID 0x00000000.
+PASS phase transitions and date controls Arabic
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS actual calendar and appearance choices English
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS actual calendar and appearance choices Arabic
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS settings and recreation English
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS settings and recreation Arabic
+.Invalid ID 0x00000000.
+PASS expiry and numeral/unit preferences English
+Invalid ID 0x00000000.
+PASS expiry and numeral/unit preferences Arabic
+.Invalid ID 0x00000000.
+PASS profile en-360x800-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-412x892-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-320x480-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile en-320x480-font2.0-dark-navy
+Invalid ID 0x00000000.
+PASS profile en-360x640-font1.3-dark-green
+Invalid ID 0x00000000.
+PASS profile en-640x360-font1.0-light-sand
+Invalid ID 0x00000000.
+PASS profile en-640x360-font2.0-dark-sand
+Invalid ID 0x00000000.
+PASS profile en-412x915-font1.0-light-navy
+Invalid ID 0x00000000.
+PASS profile en-393x852-font1.0-dark-green
+Invalid ID 0x00000000.
+PASS profile ar-360x800-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-412x892-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-320x480-font1.0-light-green
+Invalid ID 0x00000000.
+PASS profile ar-320x480-font2.0-dark-navy
+Invalid ID 0x00000000.
+PASS profile ar-360x640-font1.3-dark-green
+Invalid ID 0x00000000.
+PASS profile ar-640x360-font1.0-light-sand
+Invalid ID 0x00000000.
+PASS profile ar-640x360-font2.0-dark-sand
+Invalid ID 0x00000000.
+PASS profile ar-412x915-font1.0-light-navy
+Invalid ID 0x00000000.
+PASS profile ar-393x852-font1.0-dark-green
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS startup API 26 English
+ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+PASS startup API 26 Arabic
+.Invalid ID 0x00000000.
+PASS startup API 29 English
+Invalid ID 0x00000000.
+PASS startup API 29 Arabic
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS compact countdown layout/unchanged prayer font profiles: 1680; protected-font header omissions: 210; [110x110, 130x117]
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+PASS compact sixteen-size bitmap payload 0 bytes
+PASS strip sixteen-size bitmap payload 0 bytes
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+PASS both widgets at hdpi/xhdpi/xxhdpi/xxxhdpi with native pixel bounds
+.Invalid ID 0x00000000.
+PASS final-minute clock label profiles: 240
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets-hires/compact-en-western-24h-160x160dp-xxxhdpi.png
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets-hires/compact-ar-eastern-12h-160x160dp-xxxhdpi.png
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets-hires/strip-en-western-24h-320x64dp-xxxhdpi.png
+Invalid ID 0x00000000.
+DELIVERY PREVIEW /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets-hires/strip-ar-eastern-12h-320x64dp-xxxhdpi.png
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-110x110.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-130x117.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-140x140.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-160x160.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-177x213.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-240x240.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-en-400x400.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-110x110.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-130x117.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-140x140.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-160x160.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-177x213.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-240x240.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/compact-ar-400x400.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-250x40.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-276x51.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-260x56.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-300x64.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-360x80.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-400x128.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-en-260x300.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-250x40.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-276x51.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-260x56.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-300x64.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-360x80.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-400x128.png
+Two-widget native preview: /workspace/scratch/b6a625937fbe/work/salah/tests/native/.native-qa/screenshots/two-widgets/strip-ar-260x300.png
+.Invalid ID 0x00000000.
+TIGHT MINIMUM compact [110, 110] smallest=9.75dp profile=compact [110, 110] ar=false east=false 12h=false font=0.85 small
+TIGHT MINIMUM compact [130, 117] smallest=11.75dp profile=compact [130, 117] ar=false east=false 12h=false font=0.85 small
+TIGHT MINIMUM strip [250, 40] smallest=9.0dp profile=strip [250, 40] ar=false east=false 12h=true font=0.85 small
+TIGHT MINIMUM strip [276, 51] smallest=9.165dp profile=strip [276, 51] ar=false east=false 12h=false font=0.85 small
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+Two-widget native matrix: 3360/3360 profiles passed
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.ERROR: Style contains key with bad entry: 0x0101056c
+
+ERROR: Style contains key with bad entry: 0x0101056c
+
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+.Invalid ID 0x00000000.
+..............Invalid ID 0x00000000.
+.....Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+...Invalid ID 0x00000000.
+.........Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.......Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+.
+Time: 164.519
+
+OK (88 tests)
+

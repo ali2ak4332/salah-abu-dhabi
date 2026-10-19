@@ -1,0 +1,58 @@
+[
+  {
+    "source": "more-slot.svg",
+    "bundled_svg": "more.svg",
+    "width": "24",
+    "height": "24",
+    "sha256": "7d6db6629f63d774344520a422319155b2628799781012f8ca4ee620d28d096e"
+  },
+  {
+    "source": "phase-dot.svg",
+    "bundled_svg": "phase_dot.svg",
+    "width": "6",
+    "height": "6",
+    "sha256": "5a7fbad7099fb3f31087680e8e4e2fff3878ea4c29c1c3801742d12182941f3b"
+  },
+  {
+    "source": "chevron-left-slot.svg",
+    "bundled_svg": "chevron_left.svg",
+    "width": "24",
+    "height": "24",
+    "sha256": "e0548f32c7ce7cb803b9ca4ea9d9f62e56c03e97b5e78a24ff6ae8a904cbcf1b"
+  },
+  {
+    "source": "chevron-right-slot.svg",
+    "bundled_svg": "chevron_right.svg",
+    "width": "24",
+    "height": "24",
+    "sha256": "0fd759e1f68db061252c140915b0ece09655999af1d9360c1ffdb8e168b7f1b0"
+  },
+  {
+    "source": "calendar-slot.svg",
+    "bundled_svg": "calendar.svg",
+    "width": "18",
+    "height": "18",
+    "sha256": "06a13ed71f5265e4879dcc8057cc9ba1d1705165ceb551c3af5c2ca9707925f5"
+  },
+  {
+    "source": "sunrise-slot.svg",
+    "bundled_svg": "sunrise.svg",
+    "width": "20",
+    "height": "20",
+    "sha256": "ad2255b61bd691c1e6c5d21b49166b79bb5fcdb0e91ec5f7e1ee0643b06e9c29"
+  },
+  {
+    "source": "bell-slot.svg",
+    "bundled_svg": "bell.svg",
+    "width": "22",
+    "height": "22",
+    "sha256": "44d74f460286bcb4c02c319e9fab93e848f78194d4dc0b274fdb6dd1fdd0a8ad"
+  },
+  {
+    "source": "iqamah-clock-slot.svg",
+    "bundled_svg": "estimate_clock.svg",
+    "width": "16",
+    "height": "16",
+    "sha256": "7f1793e4a965dac5a4dce922e183f7166bd5aff18dc82ae1f157093759196f4c"
+  }
+]

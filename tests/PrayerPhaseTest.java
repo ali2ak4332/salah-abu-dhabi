@@ -7,7 +7,8 @@ public final class PrayerPhaseTest {
     static void check(boolean b,String message){if(!b)throw new AssertionError(message);}
     static Instant at(String value){return LocalDateTime.parse(value).atZone(Schedule.ZONE).toInstant();}
     static void nextAdhan(Schedule schedule,Instant now,PrayerPhase phase,String label){
-        Schedule.Next next=schedule.next(now.plusMillis(1));
+        Schedule.Next next=schedule.next(now);
+        if(next!=null&&next.at.toInstant().equals(now))next=schedule.next(now.plusNanos(1));
         check((next==null)==(phase==null),label+" availability");
         if(next!=null)check(!phase.iqamah&&phase.index==next.index&&phase.adhanAt.equals(next.at)&&phase.targetAt.equals(next.at),label+" next adhan");
     }
@@ -22,6 +23,8 @@ public final class PrayerPhaseTest {
             Instant begin=adhan.toInstant(),end=adhan.plusMinutes(DEFAULTS[index]).toInstant();
             PrayerPhase before=PrayerPhase.at(schedule,begin.minusMillis(1),true,DEFAULTS);
             check(before!=null&&!before.iqamah&&before.index==index&&before.targetAt.equals(adhan),"before adhan counts down to source time");
+            PrayerPhase submillisecond=PrayerPhase.at(schedule,begin.minusNanos(1),true,DEFAULTS);
+            check(submillisecond!=null&&!submillisecond.iqamah&&submillisecond.index==index&&submillisecond.targetAt.equals(adhan),"last nanosecond still targets upcoming adhan");
             boolean fridayDhuhr=index==2&&date.getDayOfWeek()==DayOfWeek.FRIDAY;
             if(fridayDhuhr){
                 nextAdhan(schedule,begin,PrayerPhase.at(schedule,begin,true,DEFAULTS),"Friday Dhuhr exact");
@@ -51,7 +54,7 @@ public final class PrayerPhaseTest {
             checked++;
         }
         check(PrayerPhase.at(schedule,at("2026-10-10T23:59"),true,DEFAULTS)==null,"no adhan extrapolation before coverage");
-        check(PrayerPhase.at(schedule,at("2027-10-11T00:00"),true,DEFAULTS)==null,"no adhan extrapolation after coverage");
+        check(PrayerPhase.at(schedule,at("2028-01-01T00:00"),true,DEFAULTS)==null,"no adhan extrapolation after coverage");
         LocalDate last=schedule.days.lastKey();ZonedDateTime lastIsha=ZonedDateTime.of(last,schedule.days.get(last)[5],Schedule.ZONE);
         iqamah(PrayerPhase.at(schedule,lastIsha.toInstant().plusMillis(1),true,DEFAULTS),5,lastIsha,20,"last saved Isha retains iqamah phase");
         check(PrayerPhase.at(schedule,lastIsha.plusMinutes(20).toInstant(),true,DEFAULTS)==null,"end after final estimated iqamah");

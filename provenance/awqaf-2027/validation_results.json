@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "official_2027_rows": 365,
+  "extended_app_rows": 447,
+  "extension_rows": 82,
+  "existing_283_overlap_rows_exact_match": true,
+  "original_365_rows_byte_identical": true,
+  "maximum_day_to_day_change_minutes": {
+    "fajr": 2,
+    "sunrise": 2,
+    "dhuhr": 1,
+    "asr": 1,
+    "maghrib": 2,
+    "isha": 2
+  }
+}

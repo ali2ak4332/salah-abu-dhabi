@@ -1,0 +1,39 @@
+Salah Abu Dhabi 2.1 (versionCode 13) native UI validation
+Recorded 16 October 2026 UTC; final compiled source verified unchanged during run.
+Command: bash tests/native/run-native.sh (existing isolated SALAH_NATIVE_CACHE)
+Robolectric 4.16.1 / JUnit 4.13.2 / native Android-Skia / APIs 26, 29, 35
+Result: OK (23 tests); elapsed 42.684 seconds
+
+PASS 9 existing main-app regression cases, including 18 English/Arabic layout profiles,
+     40 adhan/iqamah transitions, settings, recreation, date/expiry, insets, large fonts,
+     native Switch geometry/accessibility and API26/29 startup.
+PASS 14 widget cases with real RemoteViews apply/reapply, framework responsive selection,
+     measured text bounds and nonempty native raster output.
+PASS 84 supported responsive profiles: both providers/languages, 3 text-size preferences,
+     140x160, 160x160, 140x219, 140x220, 160x240, 200x300 and 300x300.
+SMOKE 12 below-minimum 110x110 apply/render profiles. No supported-layout/bounds claim.
+PASS 96 opacity/palette profiles: 0/65/85/100%, Green/Navy/Sand, Light/Dark, both layouts/languages.
+PASS 24 minimum-size 12-hour, Western/Eastern-numeral and font-scale 1.0/1.3/2.0 profiles.
+PASS 80 adhan/estimated-iqamah reapplications, active-row clearing, official adhan rows,
+     Friday Dhuhr exclusion, UAE midnight, unavailable/expired data and stale timer reset.
+PASS native Chronometer changes for 3 seconds without another RemoteViews update.
+PASS hidden seconds use approximate HH:MM, calculation timestamp, spoken amount,
+     Eastern-digit preference and stopped prior live clock.
+PASS one bounded inexact non-wakeup RTC snapshot alarm; no idle allowance or repeating
+     alarm; no duplicates; cancellation for seconds/expiry/no widgets; prayer alarms preserved.
+PASS refresh broadcast, direct settings Intent, localized click semantics and 40dp targets.
+PASS cold/warm/repeated settings Intents, root and all six submenu recreations,
+     actual setting selections, Back/Cancel, restored open page and dismissed saved state.
+PASS provider enable/update/resize/options/refresh/minute/delete/disable callbacks.
+PASS 32 API26/29 RemoteViews parcel/apply/reapply render profiles.
+
+Curated evidence: screenshots/widgets/ (19 PNGs). All screenshots are native renders.
+Limits: no physical phone/OEM launcher, actual TalkBack focus, Doze/battery measurement,
+notification/sound delivery or installation verification. Native seconds can pass zero if
+Android defers a phase refresh; visible instructions and settings help disclose refresh.
+A 110x110 widget is below the declared 140x160 minimum. Expanded layout begins at 220dp.
+Harmless Robolectric diagnostics: Invalid ID 0x00000000; API26 newer-style key 0x0101056c.
+
+SHA-256 unsigned aligned APK: 632ed5924887ac4b774773160638d57d984fb8550e0a25028fc8384269f75083
+SHA-256 timetable CSV: 972f2e4b08c57822bdb82020e48de01e7ca689d1ba539dc62be3294df228790a
+All production source/resource/asset hashes: app-source.sha256

@@ -38,20 +38,22 @@ public final class AppPreferences {
     }
     public static final class Palette {
         public final boolean dark;
-        public final int bg,surface,text,muted,hero,heroText,heroMuted,tint,border,accent;
+        public final int bg,surface,text,muted,hero,heroText,heroMuted,tint,border,accent,highlight;
         Palette(boolean dark,String family){
             this.dark=dark;
             if("navy".equals(family)){
-                bg=dark?0xff0e1622:0xfff1f5fa;surface=dark?0xff1b283b:0xffffffff;text=dark?0xffeef3fc:0xff1c304c;muted=dark?0xffafbed1:0xff526579;
-                hero=dark?0xff1f3859:0xff203e63;heroMuted=0xffc5d7f2;tint=dark?0xff293c54:0xffe1eaf5;border=dark?0xff7594bd:0xff8aa1bd;accent=dark?0xffb4c9ef:0xff203e63;
+                bg=dark?0xff111a24:0xfff5f6f7;surface=dark?0xff1c2b3b:0xfffefefc;text=dark?0xfff1f4f8:0xff21364d;muted=dark?0xffb4c0cf:0xff596a7c;
+                hero=dark?0xff284461:0xff233f5b;heroMuted=0xffdfbf78;tint=dark?0xff283b50:0xffe9eef3;border=dark?0xff465b73:0xffd1dae3;accent=dark?0xffbed2e7:0xff294e70;
             }else if("sand".equals(family)){
-                bg=dark?0xff1b1713:0xfffaf6ef;surface=dark?0xff2b251f:0xfffffdf8;text=dark?0xfff5ede1:0xff463c32;muted=dark?0xffc4b5a3:0xff726451;
-                hero=dark?0xff5c4330:0xff654932;heroMuted=0xfff0d8b4;tint=dark?0xff403428:0xffeee2cf;border=dark?0xffaf9173:0xffaa9071;accent=dark?0xffe3c196:0xff654932;
+                bg=dark?0xff201c17:0xfffaf6ee;surface=dark?0xff302a22:0xfffffdf8;text=dark?0xfff8f0e4:0xff493c2d;muted=dark?0xffc5b8a5:0xff726450;
+                hero=dark?0xff604a34:0xff654c32;heroMuted=0xffe5d0aa;tint=dark?0xff40372b:0xfff0e7d8;border=dark?0xff65563f:0xffddd1bc;accent=dark?0xffe4c99e:0xff705333;
             }else{
-                bg=dark?0xff101714:0xfff5f7f3;surface=dark?0xff1c2923:0xffffffff;text=dark?0xffedf3ee:0xff193d34;muted=dark?0xffafbbb4:0xff5c6f67;
-                hero=dark?0xff244638:0xff193d34;heroMuted=0xffddc991;tint=dark?0xff283d32:0xffe6ede1;border=dark?0xff83a184:0xff94ab91;accent=dark?0xffafd2a8:0xff193d34;
+                bg=dark?0xff101a17:0xfff6f4ee;surface=dark?0xff1b2b25:0xffffffff;text=dark?0xfff3f5f0:0xff213a34;muted=dark?0xffb0bfb4:0xff65736c;
+                hero=dark?0xff244b3d:0xff153f35;heroMuted=0xffdfbf78;tint=dark?0xff283d33:0xffeaf1e9;border=dark?0xff405a4b:0xffe2e5dc;accent=dark?0xffb5d6bc:0xff153f35;
             }
-            heroText=0xffffffff;
+            heroText=0xfffffdf7;
+            // Reserve a warm accent for the active prayer and its key time.
+            highlight=dark?0xffe5cb8c:0xff78551b;
         }
     }
 }

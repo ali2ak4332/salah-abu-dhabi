@@ -14,8 +14,8 @@ public class AlertPolicyTest {
         AlertPolicy.Event fajr=AlertPolicy.next(s,Instant.ofEpochMilli(midnight.epochMillis+1),true,true);
         check(fajr.prayerIndex==0&&fajr.epochMillis==at("2026-10-12T05:02").toEpochMilli(),"rearm Fajr after midnight");
         check(AlertPolicy.next(s,at("2026-10-11T20:00"),true,false).prayerIndex==0,"alert-only Fajr");
-        check(AlertPolicy.next(s,at("2027-10-11T00:00"),true,true)==null,"expired stops");
-        check(AlertPolicy.next(s,at("2027-10-10T23:00"),true,true).prayerIndex==-1,"last midnight clears widget");
+        check(AlertPolicy.next(s,at("2028-01-01T00:00"),true,true)==null,"expired stops");
+        check(AlertPolicy.next(s,at("2027-12-31T23:00"),true,true).prayerIndex==-1,"last midnight clears widget");
         int checks=0;
         for(LocalDate d:s.days.keySet())for(int i:Schedule.PRAYERS){
             long epoch=ZonedDateTime.of(d,s.days.get(d)[i],Schedule.ZONE).toInstant().toEpochMilli();
@@ -39,7 +39,7 @@ public class AlertPolicyTest {
         check(!AlertPolicy.remindersEnabled(5,2),"sunrise-only mask rejected");
         check(!AlertPolicy.remindersEnabled(5,0),"no selected prayers");
         check(AlertPolicy.nextReminder(s,at("2026-10-11T00:00"),0,61)==null,"reminders off");
-        check(AlertPolicy.nextReminder(s,at("2027-10-11T00:00"),5,61)==null,"no reminders outside data end");
+        check(AlertPolicy.nextReminder(s,at("2028-01-01T00:00"),5,61)==null,"no reminders outside data end");
         check(AlertPolicy.next(s,at("2026-10-11T00:00"),false,false)==null&&AlertPolicy.nextReminder(s,at("2026-10-11T00:00"),5,61)!=null,"reminder enabled without regular alerts");
         check(AlertPolicy.next(s,at("2026-10-11T00:00"),true,false)!=null&&AlertPolicy.nextReminder(s,at("2026-10-11T00:00"),0,61)==null,"regular alerts enabled without reminders");
         int reminderChecks=0;

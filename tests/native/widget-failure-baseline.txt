@@ -1,0 +1,53 @@
+Expected failures on unchanged v2.1 / code13, before per-widget exception containment.
+Four cases, all stopped by the injected launcher/options exception.
+
+JUnit version 4.13.2
+[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+.Invalid ID 0x00000000.
+E.E.E.E
+Time: 4.833
+There were 4 failures:
+1) appCanOpenAndResumeInBothLanguagesWithARejectedWidget(ae.prayertimes.abudhabi.WidgetFailureTest)
+java.lang.IllegalStateException: Launcher rejected widget update
+	at ae.prayertimes.abudhabi.WidgetFailureTest$RejectingManager.updateAppWidget(WidgetFailureTest.java:51)
+	at android.appwidget.AppWidgetManager.updateAppWidget(AppWidgetManager.java)
+	at ae.prayertimes.abudhabi.PrayerWidget.update(PrayerWidget.java:71)
+	at ae.prayertimes.abudhabi.PrayerWidget.updateAll(PrayerWidget.java:65)
+	at ae.prayertimes.abudhabi.MainActivity.onResume(MainActivity.java:73)
+	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1722)
+	at org.robolectric.android.internal.RoboMonitoringInstrumentation.callActivityOnResume(RoboMonitoringInstrumentation.java:395)
+	at android.app.Activity.performResume(Activity.java:9160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.robolectric.shadows.ActivityReflector$$Reflector19.performResume(Unknown Source)
+	at org.robolectric.android.controller.ActivityController.lambda$resume$5(ActivityController.java:195)
+	at org.robolectric.shadows.ShadowPausedLooper.runPaused(ShadowPausedLooper.java:264)
+	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:64)
+	at org.robolectric.android.controller.ActivityController.resume(ActivityController.java:190)
+	at ae.prayertimes.abudhabi.WidgetFailureTest.appCanOpenAndResumeInBothLanguagesWithARejectedWidget(WidgetFailureTest.java:99)
+2) updateAllContinuesAfterOneInstanceIsRejected(ae.prayertimes.abudhabi.WidgetFailureTest)
+java.lang.IllegalStateException: Launcher rejected widget update
+	at ae.prayertimes.abudhabi.WidgetFailureTest$RejectingManager.updateAppWidget(WidgetFailureTest.java:51)
+	at android.appwidget.AppWidgetManager.updateAppWidget(AppWidgetManager.java)
+	at ae.prayertimes.abudhabi.PrayerWidget.update(PrayerWidget.java:71)
+	at ae.prayertimes.abudhabi.PrayerWidget.updateAll(PrayerWidget.java:65)
+	at ae.prayertimes.abudhabi.WidgetFailureTest.updateAllContinuesAfterOneInstanceIsRejected(WidgetFailureTest.java:70)
+3) optionsFailureDoesNotBlockOtherWidgets(ae.prayertimes.abudhabi.WidgetFailureTest)
+java.lang.IllegalArgumentException: Rejected widget options
+	at ae.prayertimes.abudhabi.WidgetFailureTest$RejectingManager.getAppWidgetOptions(WidgetFailureTest.java:47)
+	at android.appwidget.AppWidgetManager.getAppWidgetOptions(AppWidgetManager.java)
+	at ae.prayertimes.abudhabi.PrayerWidget.update(PrayerWidget.java:71)
+	at ae.prayertimes.abudhabi.PrayerWidget.updateAll(PrayerWidget.java:65)
+	at ae.prayertimes.abudhabi.WidgetFailureTest.optionsFailureDoesNotBlockOtherWidgets(WidgetFailureTest.java:79)
+4) providerCallbacksContinueToSchedulingAfterRejection(ae.prayertimes.abudhabi.WidgetFailureTest)
+java.lang.IllegalStateException: Launcher rejected widget update
+	at ae.prayertimes.abudhabi.WidgetFailureTest$RejectingManager.updateAppWidget(WidgetFailureTest.java:51)
+	at android.appwidget.AppWidgetManager.updateAppWidget(AppWidgetManager.java)
+	at ae.prayertimes.abudhabi.PrayerWidget.update(PrayerWidget.java:71)
+	at ae.prayertimes.abudhabi.PrayerWidget.onUpdate(PrayerWidget.java:50)
+	at ae.prayertimes.abudhabi.WidgetFailureTest.providerCallbacksContinueToSchedulingAfterRejection(WidgetFailureTest.java:85)
+
+FAILURES!!!
+Tests run: 4,  Failures: 4
+

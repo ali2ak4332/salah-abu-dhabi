@@ -40,7 +40,8 @@ public final class PrayerPhase {
         }
         // The displayed phase passes an adhan boundary even when iqamah is disabled.
         // Scheduling and notification policy continue to use Schedule.next unchanged.
-        Schedule.Next next=schedule.next(now.plusMillis(1));
+        Schedule.Next next=schedule.next(now);
+        if(next!=null&&next.at.toInstant().equals(now))next=schedule.next(now.plusNanos(1));
         return next==null?null:new PrayerPhase(next.index,next.at,next.at,false);
     }
 }
